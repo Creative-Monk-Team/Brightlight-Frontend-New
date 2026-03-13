@@ -1,0 +1,175 @@
+[
+  {
+    "_id": "68b7e982e2f09a9da32419b2",
+    "heading": "RCIP – Rural Community Immigration Pilot (2025)",
+    "introPara": "Canada has introduced the RCIP to attract skilled immigrants to smaller towns and rural areas with labor shortages. This program supports economic growth and community stability beyond major cities.",
+    "benefitsHeading": "Benefits of the RCIP Program",
+    "benefitsList": [
+      "Live and work in affordable, high-demand communities",
+      "Faster processing times than many provincial nomination streams",
+      "Access to community-based newcomer support",
+      "Open to a wide range of skilled occupations",
+      "Employers actively assist with immigrant settlement"
+    ],
+    "eligibilityHeading": "RCIP Eligibility Criteria",
+    "eligibilityList": [
+      "Valid job offer from a participating rural employer",
+      "CLB 5 for NOC TEER 0, 1, 2; CLB 4 for TEER 3, 4, 5",
+      "At least 1 year of full-time work experience in the past 3 years",
+      "Minimum of a high school diploma (foreign education requires ECA)",
+      "Sufficient settlement funds for self and dependents",
+      "Intent to live and work in the designated community",
+      "Meet any additional community-specific requirements"
+    ],
+    "provincesHeading": "Participating Provinces and Eligible Communities (2025)",
+    "howToApplyHeading": "How to Apply for RCIP",
+    "howToApplySteps": [
+      "Step 1: Confirm Your Eligibility – meet all program criteria",
+      "Step 2: Secure a Job Offer – full-time, non-seasonal, in a listed community",
+      "Step 3: Obtain a Community Recommendation – from the local RCIP coordinator",
+      "Step 4: Submit Your PR Application – complete with all supporting documents",
+      "Step 5: Wait for Approval & Move – relocate and begin life in your new community"
+    ],
+    "refusalHeading": "Common Reasons for Refusal",
+    "refusalList": [
+      "Seasonal or part-time job offers",
+      "Employer not participating in the program",
+      "Unverifiable or insufficient work experience",
+      "Incomplete community recommendation",
+      "Failure to meet CLB requirement",
+      "Lack of settlement funds",
+      "Unassessed foreign education credentials",
+      "Applying for a non-designated community",
+      "Lack of clear intent to live in the rural community",
+      "Misrepresentation or inconsistent documents"
+    ],
+    "bookAppointment": "Book Appointment",
+    "whyChooseUsHeading": "Why Choose Us?",
+    "whyChooseUsList": [
+      "Experienced Team: Over a decade of successful immigration cases",
+      "Tailored Approach: Personalized strategies for every case",
+      "High Success Rate: Track record of approvals using case law and precedents",
+      "Comprehensive Support: From eligibility to PR approval"
+    ],
+    "faqHeading": "Frequently Asked Questions (FAQs)",
+    "showBlogs": "Y",
+    "showEligibilityAssessment": "Y",
+    "showTestimonials": "Y",
+    "provincesList": [
+      {
+        "_id": "68b7e982e2f09a9da32419b3",
+        "province": "Alberta",
+        "communities": [
+          "Cold Lake",
+          "Brooks",
+          "Peace River"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b4",
+        "province": "British Columbia",
+        "communities": [
+          "Quesnel",
+          "Terrace",
+          "Cranbrook"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b5",
+        "province": "Manitoba",
+        "communities": [
+          "Steinbach",
+          "Brandon",
+          "Neepawa"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b6",
+        "province": "New Brunswick",
+        "communities": [
+          "Miramichi",
+          "Campbellton",
+          "Woodstock"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b7",
+        "province": "Newfoundland & Labrador",
+        "communities": [
+          "Corner Brook",
+          "Gander"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b8",
+        "province": "Nova Scotia",
+        "communities": [
+          "New Glasgow",
+          "Bridgewater"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419b9",
+        "province": "Ontario",
+        "communities": [
+          "Timmins",
+          "Kenora",
+          "Owen Sound",
+          "North Bay"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419ba",
+        "province": "Prince Edward Island",
+        "communities": [
+          "Summerside",
+          "Montague"
+        ]
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419bb",
+        "province": "Saskatchewan",
+        "communities": [
+          "Swift Current",
+          "Moose Jaw",
+          "Yorkton"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "_id": "68b7e982e2f09a9da32419bc",
+        "question": "Is RCIP the same as RNIP?",
+        "answer": "No, RCIP is a new national initiative that builds on the RNIP model with updated communities and criteria."
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419bd",
+        "question": "Can I apply without a job offer?",
+        "answer": "No, you must have a valid job offer from a participating employer."
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419be",
+        "question": "Can I include my family in the PR application?",
+        "answer": "Yes, spouses and dependent children can be included in the same application."
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419bf",
+        "question": "Are healthcare jobs eligible?",
+        "answer": "Yes, many communities seek nurses, PSWs, and healthcare aides."
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419c0",
+        "question": "Is there an age limit?",
+        "answer": "There’s no formal age limit, but younger applicants may score better in points-based systems."
+      },
+      {
+        "_id": "68b7e982e2f09a9da32419c1",
+        "question": "Can I switch communities after applying?",
+        "answer": "No, you must remain in the community that recommended you."
+      }
+    ],
+    "createdAt": "2025-09-03T07:08:50.083Z",
+    "updatedAt": "2025-09-03T07:08:50.083Z",
+    "__v": 0
+  }
+]

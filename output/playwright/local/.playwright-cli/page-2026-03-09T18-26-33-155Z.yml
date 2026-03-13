@@ -1,0 +1,431 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4] [cursor=pointer]:
+        - img "Tools" [ref=e5]
+        - link "Immigration Tools" [ref=e6]:
+          - /url: /immigration-tools
+        - img "Arrow" [ref=e7]
+      - generic [ref=e8]:
+        - link "ABOUT" [ref=e10] [cursor=pointer]:
+          - /url: /about-us
+        - link "CONTACT" [ref=e11] [cursor=pointer]:
+          - /url: /contact-us
+        - generic [ref=e12]:
+          - img [ref=e13]
+          - paragraph [ref=e16]: +1 (604) 503 3734
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - link "Brightlight Blue Logo" [ref=e19] [cursor=pointer]:
+          - /url: /
+          - img "Brightlight Blue Logo" [ref=e20]
+        - navigation "Main" [ref=e21]:
+          - link "HOME" [ref=e22] [cursor=pointer]:
+            - /url: /
+          - link "SERVICES" [ref=e24] [cursor=pointer]:
+            - /url: /more-services
+          - link "BLOGS" [ref=e25] [cursor=pointer]:
+            - /url: /blogs
+          - link "CALCULATORS" [ref=e27] [cursor=pointer]:
+            - /url: "#"
+          - link "CONTACT" [ref=e28] [cursor=pointer]:
+            - /url: /contact-us
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img
+            - textbox "Search" [ref=e32]
+          - button "Search here" [ref=e33] [cursor=pointer]
+      - complementary [ref=e34]:
+        - generic [ref=e35]:
+          - button "Close menu" [ref=e36] [cursor=pointer]: ×
+          - link "HOME" [ref=e37] [cursor=pointer]:
+            - /url: /
+          - link "SERVICES ▼" [ref=e39] [cursor=pointer]:
+            - /url: "#"
+            - text: SERVICES
+            - generic [ref=e40]: ▼
+          - link "CALCULATORS ▼" [ref=e42] [cursor=pointer]:
+            - /url: "#"
+            - text: CALCULATORS
+            - generic [ref=e43]: ▼
+          - link "BLOGS" [ref=e44] [cursor=pointer]:
+            - /url: /blogs
+          - link "ABOUT" [ref=e45] [cursor=pointer]:
+            - /url: /about-us
+          - link "CONTACT" [ref=e46] [cursor=pointer]:
+            - /url: /contact-us
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - img "Location" [ref=e50]
+            - link "Vancouver" [ref=e52] [cursor=pointer]:
+              - /url: https://g.co/kgs/9BZVS85
+          - generic [ref=e53]:
+            - img "Email" [ref=e54]
+            - generic [ref=e55]: info@brightlightimmigration.ca
+        - generic [ref=e56]:
+          - link "TikTok" [ref=e57] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1
+            - img "TikTok" [ref=e58]
+          - link "LinkedIn" [ref=e59] [cursor=pointer]:
+            - /url: https://ca.linkedin.com/in/loveneet-paneswar-5b2377198
+            - img "LinkedIn" [ref=e60]
+          - link "Instagram" [ref=e61] [cursor=pointer]:
+            - /url: https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p
+            - img "Instagram" [ref=e62]
+          - link "Facebook" [ref=e63] [cursor=pointer]:
+            - /url: https://www.facebook.com/brightlightimmigration
+            - img "Facebook" [ref=e64]
+          - link "YouTube" [ref=e65] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA
+            - img "YouTube" [ref=e66]
+  - main [ref=e67]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - heading "Feeling Overwhelmed?" [level=1] [ref=e71]
+        - heading "Just Received a Refusal?" [level=1] [ref=e72]
+        - heading "WE'VE HELPED MANY OVERCOME THEM" [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e75] [cursor=pointer]:
+          - img "Permanent Residency" [ref=e76]
+          - heading "Permanent Residency" [level=2] [ref=e78]
+        - generic [ref=e79] [cursor=pointer]:
+          - img "BCPNP" [ref=e80]
+          - heading "BCPNP" [level=2] [ref=e82]
+        - generic [ref=e83] [cursor=pointer]:
+          - img "Visitor Visa" [ref=e84]
+          - heading "Visitor Visa" [level=2] [ref=e86]
+        - generic [ref=e87] [cursor=pointer]:
+          - img "Study Visa" [ref=e88]
+          - heading "Study Visa" [level=2] [ref=e90]
+        - generic [ref=e91] [cursor=pointer]:
+          - img "Family Sponsorship" [ref=e92]
+          - heading "Family Sponsorship" [level=2] [ref=e94]
+        - generic [ref=e95] [cursor=pointer]:
+          - img "Work Permit" [ref=e96]
+          - heading "Work Permit" [level=2] [ref=e98]
+        - generic [ref=e99] [cursor=pointer]:
+          - img "PFL" [ref=e100]
+          - heading "PFL" [level=2] [ref=e102]
+      - link "More Services" [ref=e104] [cursor=pointer]:
+        - /url: /more-services
+        - button "More Services" [ref=e105]
+    - generic [ref=e106]:
+      - img "Regulated Canadian Immigration Consultant" [ref=e107]
+      - generic [ref=e108]:
+        - link "LinkedIn" [ref=e109] [cursor=pointer]:
+          - /url: https://ca.linkedin.com/in/loveneet-paneswar-5b2377198
+          - button "LinkedIn" [ref=e110]
+        - generic [ref=e111]:
+          - heading "Have Questions ?" [level=5] [ref=e112]
+          - link "RCIC APPOINTEMENT" [ref=e113] [cursor=pointer]:
+            - /url: /booking
+            - button "RCIC APPOINTEMENT" [ref=e114]:
+              - text: RCIC
+              - paragraph [ref=e115]: APPOINTEMENT
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: Member Of
+        - img "RCIC" [ref=e122]
+      - generic [ref=e123]:
+        - paragraph [ref=e124]: Member Of
+        - img "Canadian Association of Professional Immigration Consultants" [ref=e126]
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Accepted By
+        - img "CICC" [ref=e130]
+    - generic [ref=e133]:
+      - heading "Why Us?" [level=1] [ref=e134]
+      - generic [ref=e136]:
+        - img "Simplifying Immigration Challenges" [ref=e138]
+        - generic [ref=e139]:
+          - heading "Simplifying Immigration Challenges" [level=2] [ref=e140]
+          - paragraph [ref=e141]: We understand the stress and confusion you might be facing. Our expert team knows every twist and turn of the complex immigration process making it faster and easier than you'd imagine.
+      - generic [ref=e143]:
+        - img "Expert in Refusal Cases" [ref=e145]
+        - generic [ref=e146]:
+          - heading "Expert in Refusal Cases" [level=2] [ref=e147]
+          - paragraph [ref=e148]: We have a proven track record of success in helping individuals overcome refusals, even those with 3 or 4 refusals. Our team of experienced professionals will carefully review your case and develop a personalised strategy to help you achieve your immigration goals.
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - heading "Our Process" [level=1] [ref=e152]
+        - paragraph [ref=e153]: IT'S QUITE EASY. WE PROMISE
+      - generic [ref=e154]:
+        - generic [ref=e156]:
+          - generic [ref=e158]:
+            - img "Step 1" [ref=e159]
+            - paragraph [ref=e160]: "1"
+          - heading "PERSONALISED ASSESMENT" [level=3] [ref=e161]
+          - list [ref=e162]:
+            - listitem [ref=e163]: Firstly, we will identify and understand your Canadian immigration needs and goals.
+            - listitem [ref=e164]: Then, we will assess your eligibility for various immigration programs accordingly.
+            - listitem [ref=e165]: We will recommend the best pathway for your immigration goals after assessment.
+            - listitem [ref=e166]: Any questions you have about the chosen pathway will be addressed along with any other concerns.
+        - generic [ref=e168]:
+          - generic [ref=e170]:
+            - img "Step 2" [ref=e171]
+            - paragraph [ref=e172]: "2"
+          - heading "TAILORED APPROACH" [level=3] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]: We'll create a custom Canadian immigration plan suited just for you according to the pathway selected.
+            - listitem [ref=e176]: Based on this plan, you'll receive a clear proposal from us outlining our services and payment structure, i.e., 50% before processing your file and 50% before submission.
+            - listitem [ref=e177]: Once the initial 50% payment is made, we'll share a comprehensive checklist to ensure everything is ready
+        - generic [ref=e179]:
+          - generic [ref=e181]:
+            - img "Step 3" [ref=e182]
+            - paragraph [ref=e183]: "3"
+          - heading "APPLICATION FULFILLMENT" [level=3] [ref=e184]
+          - list [ref=e185]:
+            - listitem [ref=e186]: A case manager will be assigned to guide you and collect documents as per the checklist.
+            - listitem [ref=e187]: We'll prepare a strong application within 7-10 business days.
+            - listitem [ref=e188]: Once your application is ready, we'll send it to you for review and final approval.
+            - listitem [ref=e189]: After your approval, simply pay the remaining 50% payment, and your application will be submitted.
+        - generic [ref=e191]:
+          - generic [ref=e193]:
+            - img "Step 4" [ref=e194]
+            - paragraph [ref=e195]: "4"
+          - heading "TRUSTED PARTNERSHIP" [level=3] [ref=e196]
+          - list [ref=e197]:
+            - listitem [ref=e198]: Once your application is submitted successfully, we'll keep you informed at every stage of the process, from submission to decision.
+            - listitem [ref=e199]: Our ongoing support and guidance will help you achieve your immigration goals.
+            - listitem [ref=e200]: You can reach out to us to inquire about updates on your application.
+            - listitem [ref=e201]: If satisfied with our service, we hope you'll feel inclined to refer others to us.
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - heading "Our Expertise is Your Success" [level=1] [ref=e206]
+        - paragraph [ref=e207]: Whether you're a student, a professional, or an entrepreneur dreaming of Canada, we're here to help you achieve it. Our Immigration visa services in Canada are tailored to your needs, making your journey to Canadian dream smooth.
+        - link "Know More" [ref=e208] [cursor=pointer]:
+          - /url: /more-services
+          - button "Know More" [ref=e209]
+      - generic [ref=e212]:
+        - generic [ref=e214]:
+          - heading "Study Visa" [level=4] [ref=e215]
+          - paragraph [ref=e216]: Expand your mind and explore endless possibilities through a top-tier education with a Canadian Student Visa.
+          - link "Know More" [ref=e217] [cursor=pointer]:
+            - /url: /student-visa
+        - generic [ref=e219]:
+          - heading "Family Sponsorship" [level=4] [ref=e220]
+          - paragraph [ref=e221]: Bring your family together in Canada through our streamlined family sponsorship services.
+          - link "Know More" [ref=e222] [cursor=pointer]:
+            - /url: /family-reunification-sponsorship
+        - generic [ref=e224]:
+          - heading "Work Permit" [level=4] [ref=e225]
+          - paragraph [ref=e226]: Are you considering your professional growth in Canada? The Canadian Work Permit is your key then.
+          - link "Know More" [ref=e227] [cursor=pointer]:
+            - /url: /work-permit
+        - generic [ref=e229]:
+          - heading "PFL" [level=4] [ref=e230]
+          - paragraph [ref=e231]: Procedural Fairness Letter (PFL), Reply to Additional Document Request, Reconsideration of Refusal Decision Program.
+          - link "Know More" [ref=e232] [cursor=pointer]:
+            - /url: /reply-to-pfl-page
+        - generic [ref=e234]:
+          - heading "Permanent Residency" [level=4] [ref=e235]
+          - paragraph [ref=e236]: Establish your permanent roots in Canada and enjoy a future filled with diverse pathways with our expert guidance.
+          - link "Know More" [ref=e237] [cursor=pointer]:
+            - /url: /permanent-residency
+        - generic [ref=e239]:
+          - heading "BCPNP" [level=4] [ref=e240]
+          - paragraph [ref=e241]: The B.C. PNP Calculator 2024 helps assess eligibility for British Columbia's Provincial Nominee Program with up-to-date criteria and scoring.
+          - link "Know More" [ref=e242] [cursor=pointer]:
+            - /url: /bc-pnp
+        - generic [ref=e244]:
+          - heading "Visitor Visa" [level=4] [ref=e245]
+          - paragraph [ref=e246]: The Visitor Visa Calculator estimates eligibility and requirements for visiting Canada, ensuring you meet the latest visa criteria.
+          - link "Know More" [ref=e247] [cursor=pointer]:
+            - /url: /visitor-visa
+      - generic:
+        - generic [ref=e257] [cursor=pointer]:
+          - img
+        - generic [ref=e258] [cursor=pointer]:
+          - img
+    - generic [ref=e260]:
+      - generic [ref=e261]:
+        - heading "Some Aspects that Hold Significance!" [level=1] [ref=e262]
+        - heading "OUR ACHIEVEMENTS IN THE SUCCESSFUL JOURNEY HAVE BEEN REMARKABLE" [level=2] [ref=e263]
+      - generic [ref=e265]:
+        - generic [ref=e266]:
+          - img "VISA PROCESSED" [ref=e267]
+          - heading "0 +" [level=1] [ref=e268]:
+            - generic [ref=e269]: "0"
+            - text: +
+          - paragraph [ref=e270]: VISA PROCESSED
+        - generic [ref=e271]:
+          - img "SUCCESS STORIES" [ref=e272]
+          - heading "0 +" [level=1] [ref=e273]:
+            - generic [ref=e274]: "0"
+            - text: +
+          - paragraph [ref=e275]: SUCCESS STORIES
+        - generic [ref=e276]:
+          - img "HAPPY CLIENTS" [ref=e277]
+          - heading "0 +" [level=1] [ref=e278]:
+            - generic [ref=e279]: "0"
+            - text: +
+          - paragraph [ref=e280]: HAPPY CLIENTS
+    - generic [ref=e282]:
+      - heading "Don't Leave without hearing from our clients testimonials." [level=1] [ref=e283]
+      - generic [ref=e284]:
+        - img "Google Reviews" [ref=e285]
+        - paragraph [ref=e286]: 4.8/5
+      - generic [ref=e288]:
+        - img "Rhea Patel" [ref=e290]
+        - generic [ref=e291]:
+          - heading "Loveneet at Bright light immigration has best service and was truly the best consultant I've worked with! She was professional, knowledgeable, and always available to answer any questions. The entire process was smooth, and I felt supported every step of the way. Highly recommend Loveneet and her team for anyone seeking reliable immigration services!" [level=3] [ref=e292]
+          - heading "Rhea Patel" [level=2] [ref=e293]
+          - generic [ref=e294]:
+            - img [ref=e295]
+            - img [ref=e297]
+            - img [ref=e299]
+            - img [ref=e301]
+            - img [ref=e303]
+          - generic [ref=e305]:
+            - button "Previous Review" [ref=e306] [cursor=pointer]
+            - paragraph [ref=e308]: 1 / 10
+            - button "Next Review" [ref=e309] [cursor=pointer]
+      - generic [ref=e311]:
+        - generic [ref=e313]:
+          - generic [ref=e314]:
+            - iframe [ref=e315]:
+              
+            - paragraph [ref=e316]: "How to get PR in Canada: PGWP Workers | Express Entry | PNP | BCPNP"
+          - generic [ref=e317]:
+            - iframe [ref=e318]:
+              
+            - paragraph [ref=e319]: Story of Nazar | Bright Light Immigration
+          - generic [ref=e320]:
+            - iframe [ref=e321]:
+              
+            - paragraph [ref=e322]: Story of Paramjit Kaur & Loveneet | Bright Light Immigration
+          - generic [ref=e323]:
+            - iframe [ref=e324]:
+              
+            - paragraph [ref=e325]: Story of Arshdeep | Bright Light Immigration
+          - generic [ref=e326]:
+            - iframe [ref=e327]
+            - paragraph [ref=e328]: Success Story of Rb Takher
+        - generic [ref=e329]:
+          - button "Previous Video" [ref=e330] [cursor=pointer]:
+            - img [ref=e331]
+          - button "Next Video" [ref=e333] [cursor=pointer]:
+            - img [ref=e334]
+    - generic [ref=e337]:
+      - generic [ref=e338]:
+        - paragraph [ref=e340]: "?"
+        - generic [ref=e341]:
+          - heading "FAQ's Made Simple" [level=1] [ref=e342]
+          - generic [ref=e343]:
+            - generic [ref=e344] [cursor=pointer]:
+              - paragraph [ref=e345]: Who can immigrate to Canada?
+              - img [ref=e346]
+            - paragraph [ref=e349] [cursor=pointer]: What are the different immigration programs available?
+            - paragraph [ref=e351] [cursor=pointer]: What are the costs associated with immigrating to Canada?
+            - paragraph [ref=e353] [cursor=pointer]: What are the benefits of immigrating to Canada?
+            - paragraph [ref=e355] [cursor=pointer]: How can I prepare for life in Canada?
+            - paragraph [ref=e357] [cursor=pointer]: Do I need a consultant to immigrate to Canada?
+            - paragraph [ref=e359] [cursor=pointer]: Canada's immigration policies seem to change all the time. How can I stay informed about how these changes might affect me?
+            - paragraph [ref=e361] [cursor=pointer]: How can I help a friend or a family member visit me in Canada?
+      - generic [ref=e362]: A wide range of people can immigrate to Canada, including skilled workers, students, family members, entrepreneurs, and refugees. Each category has its own eligibility requirements.
+  - contentinfo [ref=e363]:
+    - generic [ref=e364]:
+      - img "Free Assessment" [ref=e365]
+      - generic [ref=e366]:
+        - heading "Start your process today" [level=1] [ref=e367]
+        - paragraph [ref=e368]: Get your free assessment and discover your options to immigrate to Canada
+      - link "FREE ASSESSMENT" [ref=e369] [cursor=pointer]:
+        - /url: /booking
+    - generic [ref=e370]:
+      - paragraph [ref=e371]: VANCOUVER BASED, SERVING GLOBALLY.
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - img "Our Working Hours" [ref=e376]
+              - paragraph [ref=e377]: OUR WORKING HOURS
+            - paragraph [ref=e378]: "Monday to Friday: 10:00 AM - 6:00 PM"
+            - paragraph [ref=e379]: "Saturday: By Appointment only"
+            - paragraph [ref=e380]: "Sunday: Closed"
+          - generic [ref=e381]:
+            - generic [ref=e382]:
+              - img "Our Address" [ref=e383]
+              - paragraph [ref=e384]: OUR ADDRESS
+            - paragraph [ref=e385]: 15315 66 Ave unit 327, Surrey, BC V3S 2A1
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - img [ref=e388] [cursor=pointer]
+              - paragraph [ref=e391]: GET IN TOUCH
+            - paragraph [ref=e392]: (604) 503-3734
+            - paragraph [ref=e393]:
+              - link "info@brightlightimmigration.ca" [ref=e394] [cursor=pointer]:
+                - /url: mailto:info@brightlightimmigration.ca
+        - generic [ref=e395]:
+          - generic [ref=e396]:
+            - img "Brightlight Immigration" [ref=e397]
+            - generic [ref=e398]:
+              - link "CICC" [ref=e399] [cursor=pointer]:
+                - /url: https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx
+                - img "CICC" [ref=e400]
+              - paragraph [ref=e401]: "RCIC License # R522969"
+          - generic [ref=e402]:
+            - link "TikTok" [ref=e403] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1
+              - img [ref=e404]
+            - link "LinkedIn" [ref=e406] [cursor=pointer]:
+              - /url: https://ca.linkedin.com/in/loveneet-paneswar-5b2377198
+              - img [ref=e407]
+            - link "Instagram" [ref=e409] [cursor=pointer]:
+              - /url: https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p
+              - img [ref=e410]
+            - link "Facebook" [ref=e412] [cursor=pointer]:
+              - /url: https://www.facebook.com/brightlightimmigration
+              - img [ref=e413]
+            - link "YouTube" [ref=e415] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA
+              - img [ref=e416]
+          - generic [ref=e418]:
+            - link "PRIVACY POLICY" [ref=e419] [cursor=pointer]:
+              - /url: /privacy-policy
+            - generic [ref=e420]: "|"
+            - link "TERMS & CONDITION" [ref=e421] [cursor=pointer]:
+              - /url: /terms-and-conditions
+        - generic [ref=e422]:
+          - paragraph [ref=e423]: QUICK ACCESS
+          - generic [ref=e424]:
+            - link "PR" [ref=e425] [cursor=pointer]:
+              - /url: /pr-renewal
+            - generic [ref=e426]: .
+          - generic [ref=e427]:
+            - link "SUPER VISA" [ref=e428] [cursor=pointer]:
+              - /url: /super-visa
+            - generic [ref=e429]: .
+          - generic [ref=e430]:
+            - link "VISITOR VISA" [ref=e431] [cursor=pointer]:
+              - /url: /visitor-visa
+            - generic [ref=e432]: .
+          - generic [ref=e433]:
+            - link "STUDY VISA" [ref=e434] [cursor=pointer]:
+              - /url: /study-permit-minors
+            - generic [ref=e435]: .
+          - generic [ref=e436]:
+            - link "PNP PROGRAM" [ref=e437] [cursor=pointer]:
+              - /url: /pnp
+            - generic [ref=e438]: .
+          - generic [ref=e439]:
+            - link "FAMILY SPONSORSHIP" [ref=e440] [cursor=pointer]:
+              - /url: /family-reunification-sponsorship
+            - generic [ref=e441]: .
+          - generic [ref=e442]:
+            - link "SPOUSAL VISA" [ref=e443] [cursor=pointer]:
+              - /url: /spousal-open-work-permit
+            - generic [ref=e444]: .
+          - generic [ref=e445]:
+            - link "OPEN WORK PERMIT" [ref=e446] [cursor=pointer]:
+              - /url: /open-work-permit
+            - generic [ref=e447]: .
+          - generic [ref=e448]:
+            - link "RECONSIDERATION" [ref=e449] [cursor=pointer]:
+              - /url: /reconsideration
+            - generic [ref=e450]: .
+      - paragraph [ref=e451]: ALL RIGHTS RESERVED BRIGHTLIGHT IMMIGRATION ©2024
+  - link "Book Free Assessment" [ref=e452] [cursor=pointer]:
+    - /url: /booking
+  - button "Open Next.js Dev Tools" [ref=e458] [cursor=pointer]:
+    - img [ref=e459]
+  - alert [ref=e462]

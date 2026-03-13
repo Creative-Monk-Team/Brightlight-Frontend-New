@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "672b47c8eb8194b2d9993677",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "Coming Soon",
+    "tool_desc": "Coming Soon",
+    "tool_link": "",
+    "createdAt": "2024-11-06T10:41:12.252Z",
+    "updatedAt": "2024-11-06T10:41:12.252Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b44c5eb8194b2d9993605",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "BCPNP Calculator",
+    "tool_desc": "Our online BCPNP calculator helps you to calculate your scores under various BCPNP pathways. Click here to check your BCPNP score today!\r\n\r\n",
+    "tool_link": "bcpnp-calculator",
+    "createdAt": "2024-11-06T10:28:21.468Z",
+    "updatedAt": "2024-11-06T10:28:21.468Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b4501eb8194b2d9993612",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "CLB Calculator for IELTS",
+    "tool_desc": "Our online IELTS CLB calculator helps you to calculate your CLB Level for your IELTS result. Click here to check your IELTS CLB today!",
+    "tool_link": "clb-ilets-calculator?selected=type1",
+    "createdAt": "2024-11-06T10:29:21.870Z",
+    "updatedAt": "2024-11-06T10:29:21.870Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b473ceb8194b2d999366d",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "Express Entry CRS Draw History",
+    "tool_desc": "Check all the Draw history for Express Entry, including latest Draws, Updated Regularly!",
+    "tool_link": "previous-draw-history",
+    "createdAt": "2024-11-06T10:38:52.381Z",
+    "updatedAt": "2024-11-06T10:38:52.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b4390eb8194b2d999359b",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "Free Assessment",
+    "tool_desc": "Book a Free Assessment with us to help you and your family members find eligibility in various Canadian immigration pathways. Book now!",
+    "tool_link": "booking",
+    "createdAt": "2024-11-06T10:23:12.425Z",
+    "updatedAt": "2024-11-06T10:23:12.425Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b4542eb8194b2d999361a",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "CLB Calculator for CELPIP",
+    "tool_desc": "Our Online CELPIP calculator helps you to calculate your CLB Level for your CELPIP result. Click here to check your CELPIP CLB today!",
+    "tool_link": "clb-ilets-calculator?selected=type3",
+    "createdAt": "2024-11-06T10:30:26.264Z",
+    "updatedAt": "2024-11-06T10:30:26.264Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b4594eb8194b2d9993626",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "CLB Calculator for French (TEF)",
+    "tool_desc": "Our Online TEF CLB calculator helps you to calculate your French CLB Level for your TEF result. Click here to check your TEF CLB today!",
+    "tool_link": "clb-ilets-calculator?selected=type2",
+    "createdAt": "2024-11-06T10:31:48.621Z",
+    "updatedAt": "2024-11-06T10:31:48.621Z",
+    "__v": 0
+  },
+  {
+    "_id": "672b445feb8194b2d99935dd",
+    "blue_stroke_img": "/images/api/adding-immigration-tools-blue_stroke_img.png",
+    "white_stroke_img": "/images/api/adding-immigration-tools-white_stroke_img.png",
+    "tool_name": "FSWP Calculator",
+    "tool_desc": "Our online FSWP calculator helps you to check your eligibility under the Federal Skilled Worker (FSW) Program.",
+    "tool_link": "federal-skilled",
+    "createdAt": "2024-11-06T10:26:39.119Z",
+    "updatedAt": "2024-11-06T10:26:39.119Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,6 @@
+- generic [active]:
+  - generic:
+    - img "Company Logo" [ref=e3]
+    - link "Book Free Assessment" [ref=e4] [cursor=pointer]:
+      - /url: /booking
+  - alert [ref=e5]

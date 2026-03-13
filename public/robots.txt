@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /tmp/
+Disallow: /new-delivery-system
+Disallow: /tag/
+Disallow: /blogs/6735a539d9d73d5673d03dca
+Disallow: /admin/
+
+Sitemap: https://www.brightlightimmigration.ca/sitemap.xml

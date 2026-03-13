@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "66d157d4946ee9dac6d1f862",
+    "heading": "Some Aspects that Hold Significance!",
+    "description": "OUR ACHIEVEMENTS IN THE SUCCESSFUL JOURNEY HAVE BEEN REMARKABLE",
+    "achievement1SVG": "/images/api/achievements-section-achievement1SVG.png",
+    "achievement1Numbers": "10727",
+    "achievement1Heading": "VISA PROCESSED",
+    "achievement2SVG": "/images/api/achievements-section-achievement2SVG.webp",
+    "achievement2Numbers": "10112",
+    "achievement3SVG": "/images/api/achievements-section-achievement3SVG.webp",
+    "achievement2Heading": "SUCCESS STORIES",
+    "achievement3Numbers": "10346",
+    "achievement3Heading": "HAPPY CLIENTS",
+    "__v": 0,
+    "achievement1Alt": "VISA PROCESSED",
+    "achievement2Alt": "SUCCESS STORIES",
+    "achievement3Alt": "HAPPY CLIENTS"
+  }
+]

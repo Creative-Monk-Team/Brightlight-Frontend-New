@@ -1,0 +1,316 @@
+@import "tailwindcss";
+
+/* ===== Tailwind 4.2 Theme Configuration ===== */
+@theme {
+  --color-primary: #132f46;
+  --color-primary-light: #1d629a;
+  --color-gold: #e8c47c;
+  --color-gray-text: #78797b;
+  --color-gray-light: #727376;
+  --color-selection-bg: #23557e;
+
+  --font-heading: "AvenirNextLTPro", sans-serif;
+  --font-body: "Manrope-Regular", sans-serif;
+  --font-madera: "Madera-Regular", sans-serif;
+}
+
+/* ===== Font Declarations ===== */
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Madera-Regular";
+  src: url("/fonts/Madera-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== Base Styles ===== */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  *::selection {
+    background-color: #23557e;
+    color: #ffffff;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  :root {
+    --site-max-width: 1320px;
+    --site-max-width-tight: 1240px;
+    --site-gutter: clamp(16px, 2.6vw, 28px);
+    --section-space: clamp(52px, 7vw, 88px);
+  }
+
+  img {
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  body {
+    font-family: "Manrope-Regular", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  dd,
+  dt,
+  table {
+    font-family: "AvenirNextLTPro", sans-serif;
+  }
+
+  body,
+  span,
+  p,
+  a,
+  input,
+  li,
+  thead {
+    font-family: "Manrope-Regular", sans-serif;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  ul li:empty,
+  ol li:empty {
+    display: none;
+  }
+
+  #container p:empty,
+  #container h1:empty,
+  #container h2:empty,
+  #container h3:empty,
+  #container h4:empty,
+  #container h5:empty,
+  #container h6:empty,
+  #container span:empty,
+  #container table:empty,
+  #container thead:empty,
+  #container tbody:empty,
+  #container tr:empty,
+  #container td:empty,
+  #container strong:empty {
+    display: none;
+  }
+}
+
+.site-shell {
+  width: min(calc(100% - (var(--site-gutter) * 2)), var(--site-max-width));
+  margin-inline: auto;
+}
+
+.site-shell-tight {
+  width: min(calc(100% - (var(--site-gutter) * 2)), var(--site-max-width-tight));
+  margin-inline: auto;
+}
+
+.section-pad {
+  padding-block: var(--section-space);
+}
+
+/* ===== FAQ Section Styles ===== */
+#faqs li {
+  margin-bottom: 10px;
+}
+
+#faqs ul,
+#faqs ol {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* ===== Swiper Overrides ===== */
+.swiper-slide {
+  flex-shrink: 1 !important;
+}
+
+.swiper_pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: white !important;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+.swiper_pagination_2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.swiper_pagination_2 .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 0.5 !important;
+}
+
+.swiper_pagination_2 .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: #132f46 !important;
+}
+
+.swiper_pagination_2 .swiper-3d .swiper-slide-shadow-left,
+.swiper_pagination_2 .swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: auto !important;
+  bottom: -60px !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #132f46 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  font-weight: 1000 !important;
+}
+
+@media all and (max-width: 900px) {
+  .swiper-button-prev {
+    left: 30% !important;
+  }
+
+  .swiper-button-next {
+    right: 30% !important;
+  }
+}
+
+/* ===== Scroll Fade-in ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+.fade-up.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero entrance keyframes */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(80px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: none; }
+}
+.hero-slide-left  { animation: slideInLeft  0.8s ease-out both; }
+.hero-slide-right { animation: slideInRight 0.8s ease-out 0.2s both; }
+.hero-fade-up     { animation: fadeInUp     0.8s ease-out 0.4s both; }
+.hero-cards       { animation: fadeInUp     0.6s ease-out 0.5s both; }
+.hero-btn         { animation: fadeInUp     0.5s ease-out 0.7s both; }
+
+/* Button light sweep */
+@keyframes lightEffect {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* ===== Custom Card Shadows ===== */
+.our-process-card-odd-shadow {
+  box-shadow: rgb(207 212 217 / 0.5) 0px 2px 1px,
+    rgb(207 212 217 / 0.5) 0px 4px 2px, rgb(207 212 217 / 0.5) 0px 8px 4px,
+    rgb(207 212 217 / 0.5) 0px 16px 8px, rgb(207 212 217 / 0.5) 0px 32px 16px;
+}
+
+.our-process-card-even-shadow {
+  box-shadow: rgb(248 240 224 / 0.5) 0px 2px 1px,
+    rgb(248 240 224 / 0.5) 0px 4px 2px, rgb(248 240 224 / 0.5) 0px 8px 4px,
+    rgb(248 240 224 / 0.5) 0px 16px 8px, rgb(248 240 224 / 0.5) 0px 32px 16px;
+}
+
+/* ===== MDX Button ===== */
+.mdxButton {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #0b4b66;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== Intro Table Styles ===== */
+.intro table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+.intro th,
+.intro td {
+  border: 1px solid #e2e8f0;
+  padding: 8px;
+  text-align: left;
+}
