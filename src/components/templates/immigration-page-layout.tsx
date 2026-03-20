@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import BestChoice from "@/components/sections/best-choice";
+import OurProcess from "@/components/sections/our-process";
 import FAQInternal from "@/components/sections/faq-internal";
 import Testimonials from "@/components/sections/testimonials";
 import RecentBlogs from "@/components/sections/recent-blogs";
@@ -35,8 +35,10 @@ export interface WhyChooseUsItem {
 export interface ImmigrationPageData {
   heading: string;
   description: string;
+  description2?: string;
 
   aboutDescription: string;
+  aboutDescription2?: string;
   aboutImage?: string;
 
   benefitsHeading?: string;
@@ -127,9 +129,14 @@ export default function ImmigrationPageLayout({
             <h1 className="text-gold text-[50px] max-[580px]:text-[34px]">
               {data.heading}
             </h1>
-            <p className="text-white w-[74%] max-[1000px]:w-full mx-auto text-[25px] max-[580px]:text-[18px] leading-[1.8] pt-[60px]">
+            <p className="text-white w-[74%] max-[1000px]:w-full mx-auto text-[25px] max-[580px]:text-[18px] leading-[1.8] pt-[20px]">
               {data.description}
             </p>
+            {data.description2 && (
+              <p className="text-white w-[74%] max-[1000px]:w-full mx-auto text-[25px] max-[580px]:text-[18px] leading-[1.8] pt-[20px]">
+                {data.description2}
+              </p>
+            )}
           </div>
 
           {/* Quick Access dropdown */}
@@ -173,6 +180,9 @@ export default function ImmigrationPageLayout({
       >
         <div className="w-[46%] max-[1000px]:w-full max-[1000px]:text-center text-gray-text text-[20px] max-[580px]:text-[16px] leading-[1.8]">
           <p className="mb-[35px]">{data.aboutDescription}</p>
+          {data.aboutDescription2 && (
+            <p className="mb-[35px]">{data.aboutDescription2}</p>
+          )}
         </div>
         {data.aboutImage && (
           <div className="w-[46%] max-[1000px]:w-full max-[1000px]:mb-[80px]">
@@ -207,35 +217,43 @@ export default function ImmigrationPageLayout({
         </div>
       )}
 
-      {/* ===== ELIGIBILITY ===== */}
+      {/* ===== ELIGIBILITY / PATHWAYS ===== */}
       {data.eligibilityHeading && (
         <div
           id="eligibility"
-          className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto text-left py-[100px] max-[1000px]:py-[10px] max-[1000px]:px-[10px] max-[1000px]:text-center"
+          className="w-full bg-primary py-[100px] max-[580px]:py-[60px]"
         >
-          <h1 className="text-[60px] max-[1000px]:text-[50px] max-[580px]:text-[34px] text-primary pb-[30px]">
-            {data.eligibilityHeading}
-          </h1>
-          {data.eligibilityDescription && (
-            <p className="text-[30px] max-[1000px]:text-[26px] max-[580px]:text-[18px] text-gray-text">
-              {data.eligibilityDescription}
-            </p>
-          )}
-          {data.eligibilityCards && data.eligibilityCards.length > 0 && (
-            <div className="flex max-[1000px]:flex-col mx-auto mt-[60px] justify-between gap-4">
-              {data.eligibilityCards.map((card, i) => (
-                <Link
-                  key={i}
-                  href={card.href}
-                  className="py-[60px] px-[20px] max-[1000px]:w-[300px] max-[1000px]:h-[180px] max-[1000px]:py-[60px] max-[1000px]:px-[10px] max-[1000px]:mb-[40px] max-[1000px]:mx-auto w-[350px] max-[1190px]:w-[260px] bg-[#153b58] text-white rounded-[15px] mx-auto text-center flex items-center justify-center leading-[1.8] cursor-pointer hover:opacity-90 no-underline"
-                >
-                  <h2 className="text-3xl max-[1090px]:text-[18px] text-white">
-                    {card.text}
-                  </h2>
-                </Link>
-              ))}
-            </div>
-          )}
+          <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto">
+            <h1 className="text-white text-[60px] max-[1000px]:text-[50px] max-[580px]:text-[34px] max-[490px]:text-[26px] text-center">
+              {data.eligibilityHeading}
+            </h1>
+            {data.eligibilityDescription && (
+              <p className="text-white/80 text-[20px] max-[580px]:text-[16px] text-center mt-4">
+                {data.eligibilityDescription}
+              </p>
+            )}
+            {data.eligibilityCards && data.eligibilityCards.length > 0 && (
+              <div className="flex justify-around mt-[90px] max-[1000px]:grid max-[1000px]:grid-cols-2 max-[1000px]:gap-[40px] max-[1000px]:justify-items-center max-[330px]:flex max-[330px]:flex-col max-[330px]:items-center">
+                {data.eligibilityCards.map((card, i) => (
+                  <Link
+                    key={i}
+                    href={card.href}
+                    className="h-[270px] w-[275px] max-[1260px]:w-[240px] max-[540px]:w-[170px] max-[540px]:h-[210px] max-[490px]:w-[150px] max-[490px]:h-[150px] max-[445px]:w-[170px] max-[445px]:h-[170px] max-[395px]:w-[150px] max-[395px]:h-[150px] max-[330px]:w-[60%] max-[330px]:h-[180px] bg-white flex flex-col items-center justify-center text-center rounded-[20px] text-primary p-[60px_20px] max-[540px]:p-[33px_20px] max-[490px]:p-[28px_20px] transition-all duration-300 hover:bg-gold hover:text-white cursor-pointer no-underline"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/images/graduatedStudent.png"
+                      alt={card.text}
+                      className="h-[100px] w-[100px] max-[540px]:h-[84px] max-[540px]:w-[84px] max-[490px]:h-[65px] max-[490px]:w-[65px]"
+                    />
+                    <h2 className="text-2xl font-semibold mt-[40px] max-[540px]:text-[18px] max-[490px]:text-[16px] max-[445px]:text-[14px] max-[395px]:text-[13px] max-[490px]:mt-[20px]">
+                      {card.text}
+                    </h2>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       )}
 
@@ -370,8 +388,10 @@ export default function ImmigrationPageLayout({
         </div>
       )}
 
-      {/* ===== BEST CHOICE ===== */}
-      <BestChoice />
+      {/* ===== OUR PROCESS (matching old site service pages) ===== */}
+      <div id="Our-process">
+        <OurProcess />
+      </div>
 
       {/* ===== FAQ ===== */}
       {data.faqs && data.faqs.length > 0 && (

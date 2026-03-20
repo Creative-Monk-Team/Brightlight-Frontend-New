@@ -13,10 +13,17 @@ interface FAQItem {
   answer: string;
 }
 
-export default function FAQInternal({ data }: { data: FAQData }) {
+interface FAQInternalProps {
+  data: FAQData;
+  variant?: "white" | "blue";
+}
+
+export default function FAQInternal({ data, variant = "white" }: FAQInternalProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [faqData, setFaqData] = useState<FAQItem[]>([]);
   const [faqHeading, setFaqHeading] = useState("");
+
+  const isBlue = variant === "blue";
 
   useEffect(() => {
     if (data) {
@@ -35,6 +42,106 @@ export default function FAQInternal({ data }: { data: FAQData }) {
 
   if (!faqData.length) return null;
 
+  // Blue variant: dark gradient bg, golden question mark, gold/white text
+  if (isBlue) {
+    return (
+      <section
+        id="faqs"
+        className="w-full overflow-hidden flex items-center justify-center py-[50px]"
+        style={{
+          background: "linear-gradient(to bottom, #132f46, #081825)",
+        }}
+      >
+        {/* Desktop Layout */}
+        <div className="max-w-[1440px] w-full hidden min-[1100px]:flex items-center justify-between max-[1380px]:w-[95%]">
+          <div className="flex items-start justify-start gap-[30px] w-[60%]">
+            {/* Golden question mark */}
+            <div className="w-[150px] h-[150px] shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/faqimage-golden.webp"
+                alt="FAQ"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="w-[75%]">
+              <h1 className="text-white text-[50px] font-extrabold max-[820px]:text-[40px]">
+                {faqHeading}
+              </h1>
+              <div className="border-r border-white pr-[30px] py-[10px]">
+                {faqData.map((item, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`flex items-start justify-between cursor-pointer mt-[20px] first:mt-[30px] hover:-translate-y-[5px] transition-transform duration-300 ${
+                      activeIndex === index
+                        ? "[&_p]:text-white [&_p]:font-extrabold [&_svg]:block"
+                        : ""
+                    }`}
+                  >
+                    <p className="w-[90%] text-[#ead9b0] transition-all duration-100 text-[20px]">
+                      {item.question}
+                    </p>
+                    <FaChevronRight className="hidden w-[30px] h-[30px] text-white shrink-0" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-[38%] -mt-[30px] text-[20px] text-white [&_p]:mb-2 [&_ul]:ml-5 [&_ol]:ml-5 [&_li]:mb-2"
+            dangerouslySetInnerHTML={{ __html: faqData[activeIndex]?.answer }}
+          />
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="max-w-[1440px] w-full flex min-[1100px]:hidden flex-col justify-between max-[1380px]:w-[95%]">
+          <div className="flex items-start justify-start gap-[30px] w-full max-[820px]:flex-col">
+            <div className="w-[100px] h-[100px] shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/faqimage-golden.webp"
+                alt="FAQ"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="w-full">
+              <h1 className="text-white text-[50px] font-extrabold text-left max-[820px]:text-[40px]">
+                {faqHeading}
+              </h1>
+              <div className="py-[10px]">
+                {faqData.map((item, index) => (
+                  <div key={index}>
+                    <div
+                      onClick={() => setActiveIndex(index)}
+                      className={`flex items-start justify-between cursor-pointer mt-5 first:mt-[30px] hover:-translate-y-[5px] transition-transform duration-300 ${
+                        activeIndex === index
+                          ? "[&_p]:text-white [&_p]:font-extrabold [&_svg]:block"
+                          : ""
+                      }`}
+                    >
+                      <p className="w-[90%] text-[#ead9b0] transition-all duration-100 text-[20px] max-[820px]:text-[15px]">
+                        {item.question}
+                      </p>
+                      <FaChevronRight className="hidden w-[15px] h-[15px] rotate-90 text-white shrink-0" />
+                    </div>
+                    {activeIndex === index && (
+                      <div
+                        className="w-full mx-auto text-[15px] text-white mb-10 mt-[10px] pt-5 border-t border-white/30 [&_p]:mb-2 [&_ul]:ml-5 [&_ol]:ml-5 [&_li]:mb-2"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // White variant (default): blue-polygon, primary colors
   return (
     <section
       id="faqs"

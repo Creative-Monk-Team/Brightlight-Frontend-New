@@ -352,12 +352,12 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
 
         {/* ===== FLOATING NAV BAR ===== */}
         <div
-          className={`left-0 w-full flex flex-col items-center transition-all duration-300 z-[49] ${
+          className={`left-0 w-full flex flex-col items-center z-[49] ${
             hideContactNavbar ? "fixed top-0 py-2" : "absolute top-full pt-4"
           }`}
         >
           {/* White main bar */}
-          <div className="site-shell shadow-[0_10px_30px_rgba(19,47,70,0.14)] max-[1290px]:p-[24px_32px] max-[1080px]:w-full max-[1080px]:p-[22px_0px] max-[1080px]:bg-transparent max-[1080px]:border-none max-[1080px]:shadow-none w-full mx-auto flex justify-between items-center p-[22px_28px] rounded-[14px] bg-white relative -top-[2px] z-[3] transition-colors duration-300">
+          <div className="site-shell shadow-[0_10px_30px_rgba(19,47,70,0.14)] max-[1290px]:p-[24px_32px] max-[1080px]:w-full max-[1080px]:p-[28px_0px] max-[1080px]:bg-transparent max-[1080px]:border-none max-[1080px]:shadow-none w-full mx-auto flex justify-between items-center p-[22px_28px] rounded-[14px] bg-white relative -top-[2px] z-[3] transition-colors duration-300">
             {/* Desktop logo */}
             <Link
               href="/"
@@ -500,23 +500,24 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
             {/* Search bar */}
             <form
               onSubmit={handleSubmit}
-              className="max-[1439px]:ml-6 max-[1080px]:ml-auto max-[1080px]:mr-[10px]"
+              className="max-[1439px]:ml-6 max-[1080px]:ml-auto max-[1080px]:mr-[10px] max-[1080px]:flex-1 max-[1080px]:max-w-[250px] max-[450px]:max-w-[200px]"
             >
-              <div className="flex items-center rounded-full border border-[#dec18f] w-fit overflow-hidden max-[1080px]:h-[45px] max-[450px]:h-[40px]">
-                <div className="relative grow flex items-center bg-white max-[1080px]:bg-transparent rounded-full pl-[10px]">
-                  <FaSearch className="absolute left-[10px] w-[20px] h-[20px] max-[1080px]:w-[12px] max-[1080px]:h-[12px] text-[#dec18f] pointer-events-none z-[3]" />
+              <div className="flex items-center rounded-full border border-[#dec18f] overflow-hidden max-[1080px]:h-[50px] max-[450px]:h-[45px] max-[1080px]:flex-1">
+                <div className="relative grow flex items-center bg-white max-[1080px]:bg-transparent rounded-full pl-[10px] h-full">
+                  <FaSearch className="absolute left-[10px] w-[20px] h-[20px] max-[1080px]:w-[14px] max-[1080px]:h-[14px] text-[#dec18f] pointer-events-none z-[3]" />
                   <input
                     type="text"
-                    className="w-full border-none outline-none p-[10px_10px_10px_35px] max-[1080px]:p-0 max-[1080px]:w-[120px] max-[450px]:w-[70px] max-[1080px]:bg-transparent text-[16px] rounded-l-full"
+                    className="w-full border-none outline-none p-[10px_10px_10px_35px] max-[1080px]:p-[0_0_0_30px] max-[1080px]:w-full max-[1080px]:bg-transparent text-[16px] max-[1080px]:text-[14px] rounded-l-full h-full"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     required
                     aria-label="Search"
+                    placeholder="Search"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="bg-[#dec18f] text-white border-none outline-none p-[10px_20px] max-[1080px]:p-[9px_17px] max-[1080px]:text-[10px] max-[450px]:p-[10px_13px] max-[450px]:text-[7px] rounded-full text-[16px] cursor-pointer whitespace-nowrap hover:bg-[#c9a96e] transition-colors duration-200"
+                  className="bg-[#dec18f] text-white border-none outline-none p-[10px_20px] max-[1080px]:p-[12px_18px] max-[1080px]:text-[11px] max-[450px]:p-[10px_14px] max-[450px]:text-[10px] rounded-full text-[16px] cursor-pointer whitespace-nowrap hover:bg-[#c9a96e] transition-colors duration-200 h-full"
                 >
                   Search here
                 </button>
@@ -649,8 +650,9 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
           </aside>
 
           {/* ===== CONTACT STRIP ===== */}
+          {/* When strip is visible (not scrolled), it overlaps the dark page banner → use white text/icons */}
           <div
-            className={`site-shell flex justify-between items-center p-[12px_4px] text-primary max-[1080px]:w-full max-[1080px]:p-0 w-full mx-auto transition-all duration-300 mt-1 ${
+            className={`site-shell flex justify-between items-center p-[12px_4px] max-[1080px]:w-full max-[1080px]:p-[8px_10px] w-full mx-auto transition-all duration-300 mt-1 ${
               hideContactNavbar ? "opacity-0 invisible hidden" : "opacity-100 visible"
             }`}
           >
@@ -661,14 +663,13 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
                   loading="lazy"
                   height={24}
                   width={24}
-                  src={showBlue ? "/images/locationBlue.png" : "/images/location-white.png"}
+                  src="/images/location-white.png"
                   alt=""
                   className="w-[18px] h-auto mr-[5px] max-[1080px]:w-[11px]"
                 />
                 <Link
                   href="https://g.co/kgs/9BZVS85"
-                  className="font-bold no-underline max-[450px]:text-[10px]"
-                  style={{ color: showBlue ? "#164c95" : "white" }}
+                  className="font-bold no-underline max-[450px]:text-[10px] text-white"
                   target="_blank"
                 >
                   Vancouver
@@ -680,13 +681,12 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
                   loading="lazy"
                   height={24}
                   width={24}
-                  src={showBlue ? "/images/mailBlue.png" : "/images/mail-white.png"}
+                  src="/images/mail-white.png"
                   alt=""
                   className="w-[18px] h-auto mr-[5px] ml-[9px] max-[1080px]:ml-0 max-[1080px]:w-[14px]"
                 />
                 <span
-                  className="font-bold max-[450px]:text-[10px]"
-                  style={{ color: showBlue ? "#164c95" : "white" }}
+                  className="font-bold max-[450px]:text-[10px] text-white"
                 >
                   info@brightlightimmigration.ca
                 </span>
@@ -699,46 +699,34 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
                 {
                   href: "https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1",
                   label: "TikTok",
-                  blueSrc: "/images/tiktokBlue.png",
+
                   Icon: FaTiktok,
                 },
                 {
                   href: "https://ca.linkedin.com/in/loveneet-paneswar-5b2377198",
                   label: "LinkedIn",
-                  blueSrc: "/images/linkedinBlue.png",
+
                   Icon: FaLinkedinIn,
                 },
                 {
                   href: "https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p",
                   label: "Instagram",
-                  blueSrc: "/images/instagramBlue.png",
+
                   Icon: FaInstagram,
                 },
                 {
                   href: "https://www.facebook.com/brightlightimmigration",
                   label: "Facebook",
-                  blueSrc: "/images/facebookBlue.png",
+
                   Icon: FaFacebookF,
                 },
                 {
                   href: "https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA",
                   label: "YouTube",
-                  blueSrc: "/images/youtubeBlue.png",
+
                   Icon: FaYoutube,
                 },
-              ].map(({ href, label, blueSrc, Icon }) =>
-                showBlue ? (
-                  <Link key={label} target="_blank" href={href}>
-                    <Image
-                      loading="lazy"
-                      height={24}
-                      width={24}
-                      src={blueSrc}
-                      alt={label}
-                      className="w-6 h-6 max-[1080px]:w-[18px] max-[1080px]:h-[18px] max-[450px]:w-4 max-[450px]:h-4"
-                    />
-                  </Link>
-                ) : (
+              ].map(({ href, label, Icon }) => (
                   <Link key={label} target="_blank" href={href}>
                     <Icon
                       className="w-6 h-6 fill-white cursor-pointer hover:fill-[#f1c40f] transition-colors duration-200 max-[1080px]:w-[18px] max-[1080px]:h-[18px] max-[450px]:w-4 max-[450px]:h-4"

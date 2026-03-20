@@ -8,6 +8,19 @@ export const metadata: Metadata = {
     "Discover details about Canadian permanent residency, such as its advantages, eligibility criteria, application procedure, and additional information.",
 };
 
+const quickAccess = [
+  { label: "About the program", id: "about-program" },
+  { label: "Pathways to PR", id: "eligibility" },
+  { label: "Our process", id: "why-choose-us" },
+  { label: "Testimonials", id: "testimonials" },
+  { label: "Blogs", id: "blogs" },
+];
+
 export default function PermanentResidencyPage() {
-  return <ImmigrationPageLayout data={permanentResidencyData} />;
+  return (
+    <ImmigrationPageLayout
+      data={permanentResidencyData}
+      quickAccess={quickAccess}
+    />
+  );
 }

@@ -68,7 +68,7 @@
   }
 
   :root {
-    --site-max-width: 1320px;
+    --site-max-width: 1440px;
     --site-max-width-tight: 1240px;
     --site-gutter: clamp(16px, 2.6vw, 28px);
     --section-space: clamp(52px, 7vw, 88px);
@@ -306,6 +306,17 @@
   width: 100%;
   border-collapse: collapse;
   margin: 12px 0;
+}
+
+/* Services Swiper slide sizing — desktop 300px, mobile 85vw */
+.swiper-slide.services-slide {
+  width: 300px !important;
+  flex-shrink: 0 !important;
+}
+@media (max-width: 580px) {
+  .swiper-slide.services-slide {
+    width: 85vw !important;
+  }
 }
 
 .intro th,
