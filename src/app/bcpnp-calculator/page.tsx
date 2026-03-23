@@ -464,7 +464,7 @@ export default function BCPNPCalculatorPage() {
       {/* ============================================================= */}
       {/*  Banner                                                        */}
       {/* ============================================================= */}
-      <div className="bg-[url('/images/canadaBlue.jpeg')] bg-no-repeat bg-cover w-full py-[100px] pt-[230px] max-[780px]:pt-[150px] max-[780px]:pb-[110px] max-[460px]:pt-[150px] max-[460px]:pb-[80px] max-[355px]:pt-[150px] max-[355px]:pb-[70px]">
+      <div className="bg-[url('/images/canadaBlue.jpeg')] bg-no-repeat bg-cover w-full py-[100px] pt-[230px] max-[780px]:pt-[200px] max-[780px]:pb-[110px] max-[460px]:pt-[200px] max-[460px]:pb-[80px] max-[355px]:pt-[200px] max-[355px]:pb-[70px]">
         <div className="max-w-[1440px] mx-auto text-center max-[1130px]:w-[95%] max-[1130px]:pt-[100px]">
           <h1 className="text-[#e0b969] text-[50px] max-[980px]:text-[35px] max-[460px]:text-[30px] max-[355px]:text-[26px]">
             {data.heading}

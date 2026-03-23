@@ -195,11 +195,11 @@ function ClbCalculatorContent() {
       {/*  Banner                                                      */}
       {/* ============================================================ */}
       <div
-        className="w-full bg-cover bg-no-repeat bg-center py-[100px] pt-[230px] max-[1000px]:pt-[180px] max-[580px]:pt-[150px]"
+        className="w-full bg-cover bg-no-repeat bg-center py-[100px] pt-[230px] max-[1000px]:pt-[220px] max-[580px]:pt-[200px]"
         style={{ backgroundImage: "url('/images/canadaBlue.jpeg')" }}
       >
         <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto text-center">
-          <h1 className="text-gold text-[60px] font-black max-[490px]:text-[45px]">
+          <h1 className="text-gold text-[60px] font-black max-[780px]:text-[45px] max-[490px]:text-[32px]">
             {data.heading}
           </h1>
           <h4 className="text-white pt-[50px]">{data.description}</h4>
