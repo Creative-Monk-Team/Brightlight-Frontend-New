@@ -5,6 +5,13 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
 import FloatingButton from "@/components/floating-button";
 
+// Pages where navbar should use blue logo/icons (white/light background pages)
+// Pages where navbar should use blue logo/icons (white/light background pages)
+// All other pages default to white (for dark banner backgrounds)
+const BLUE_NAVBAR_PAGES = [
+  "/",
+];
+
 export default function SiteShell({
   children,
 }: {
@@ -17,9 +24,11 @@ export default function SiteShell({
     return <>{children}</>;
   }
 
+  const showBlue = BLUE_NAVBAR_PAGES.includes(pathname || "");
+
   return (
     <>
-      <Navbar showBlue />
+      <Navbar showBlue={showBlue} />
       {children}
       <Footer />
       <FloatingButton />

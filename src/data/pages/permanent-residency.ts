@@ -5,7 +5,7 @@ export const permanentResidencyData: ImmigrationPageData = {
   description:
     "Make Canada your home through the Permanent Residency program",
   description2:
-    "Canada welcomes thousands of skilled individuals, entrepreneurs, and families every year through its Permanent Residency programs. Whether you're looking to settle permanently, reunite with family, or build a new career, the PR pathway offers stability, healthcare, education, and the freedom to live and work anywhere in Canada.",
+    "Canada welcomes thousands of skilled individuals from around the world every year. With a thriving economy, high living standards, and better opportunities, it's no wonder so many aspire to call it home.",
 
   aboutDescription:
     "The Canadian Permanent Residency (PR) Program, managed by Immigration, Refugees and Citizenship Canada (IRCC), allows foreign nationals to obtain permanent resident status in Canada. This status gives you the right to live, work, and study in Canada indefinitely, with the same rights and freedoms as Canadian citizens (except voting and running for office).",

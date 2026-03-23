@@ -13,7 +13,7 @@ export default function AboutUsPage() {
       {/* 1. BANNER                                                    */}
       {/* ============================================================ */}
       <section
-        className="w-full bg-cover bg-no-repeat bg-center pt-[230px] pb-[120px] max-[1000px]:pt-[180px] max-[768px]:pt-[160px] max-[768px]:pb-16"
+        className="w-full bg-cover bg-no-repeat bg-center pt-[230px] pb-[120px] max-[1000px]:pt-[200px] max-[768px]:pt-[200px] max-[768px]:pb-16"
         style={{ backgroundImage: "url('/images/about-banner.png')" }}
       >
         <div className="mx-auto max-w-[1440px] max-[1500px]:max-w-[1400px] max-[1300px]:max-w-[1200px] max-[1100px]:max-w-[1000px] max-[900px]:max-w-[700px] max-[720px]:max-w-[620px] max-[620px]:max-w-[520px] max-[450px]:max-w-[380px] text-center px-4">

@@ -121,7 +121,7 @@ export default function ImmigrationPageLayout({
     <>
       {/* ===== BANNER ===== */}
       <div
-        className="w-full bg-cover bg-no-repeat bg-center py-[100px] pt-[230px] max-[1000px]:pt-[180px] max-[580px]:pt-[150px]"
+        className="w-full bg-cover bg-no-repeat bg-center py-[100px] pt-[230px] max-[1000px]:pt-[220px] max-[580px]:pt-[200px]"
         style={{ backgroundImage: "url('/images/canadaBlue.jpeg')" }}
       >
         <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto text-center">
@@ -139,35 +139,65 @@ export default function ImmigrationPageLayout({
             )}
           </div>
 
-          {/* Quick Access dropdown */}
-          <div
-            className={`w-[700px] max-[1080px]:w-full mx-auto flex max-[1080px]:flex-col text-center justify-center items-center text-white mt-[50px] ${
-              isDropdownOpen ? "active" : ""
-            }`}
-          >
+          {/* Quick Access — desktop: rotated label + vertical list; mobile: horizontal bar with dropdown */}
+          <div className="w-[700px] max-[1080px]:w-full mx-auto flex max-[1080px]:flex-col text-center justify-center items-center text-white mt-[50px] relative">
+            {/* Desktop: rotated QUICK ACCESS label */}
             <div
-              className="max-[1080px]:flex max-[1080px]:justify-between max-[1080px]:items-center max-[1080px]:cursor-pointer max-[1080px]:w-full border-b border-white max-[1080px]:border-none pb-5 max-[1080px]:pb-0"
+              className="max-[1080px]:hidden border-b border-white pb-5"
               style={{ transform: "rotate(-90deg)" }}
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
-              <h3 className="text-[30px] max-[1080px]:text-[24px] max-[730px]:text-[20px] max-[490px]:text-[18px] max-[1080px]:transform-none whitespace-nowrap">
-                QUICK ACCESS
-              </h3>
+              <h3 className="text-[30px] whitespace-nowrap">QUICK ACCESS</h3>
             </div>
-            <div
-              className={`ml-[-50px] max-[1080px]:ml-0 max-[1080px]:bg-[#f7f7f7] max-[1080px]:p-[10px] max-[1080px]:absolute max-[1080px]:top-full max-[1080px]:left-0 max-[1080px]:w-full max-[1080px]:z-10 max-[1080px]:shadow-[0_4px_6px_rgba(0,0,0,0.1)] ${
-                isDropdownOpen ? "max-[1080px]:block" : "max-[1080px]:hidden"
-              }`}
-            >
+
+            {/* Desktop: vertical list */}
+            <div className="ml-[-50px] max-[1080px]:hidden">
               {items.map((item) => (
                 <p
                   key={item.id}
-                  className="text-left max-[1080px]:text-center pb-[8px] max-[1080px]:pb-0 max-[1080px]:py-[10px] text-[28px] max-[1080px]:text-[18px] max-[1080px]:text-[#00273f] cursor-pointer"
+                  className="text-left pb-[8px] text-[28px] cursor-pointer hover:text-gold transition-colors duration-200"
                   onClick={() => scrollToSection(item.id)}
                 >
                   {item.label}
                 </p>
               ))}
+            </div>
+
+            {/* Mobile: horizontal dropdown bar */}
+            <div className="hidden max-[1080px]:block w-full relative">
+              <button
+                className="w-full flex items-center justify-center gap-3 py-3 px-4 text-white text-[20px] max-[490px]:text-[18px] font-semibold cursor-pointer bg-transparent border-none"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                <span>QUICK ACCESS</span>
+                <svg
+                  className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div
+                className={`bg-[#f7f7f7] w-full z-10 shadow-[0_4px_6px_rgba(0,0,0,0.1)] overflow-hidden transition-[max-height] duration-300 ${
+                  isDropdownOpen ? "max-h-[600px]" : "max-h-0"
+                }`}
+              >
+                <div className="py-2">
+                  {items.map((item) => (
+                    <p
+                      key={item.id}
+                      className="text-center py-[10px] px-4 text-[18px] text-[#00273f] cursor-pointer hover:bg-[#e8e8e8] transition-colors duration-200"
+                      onClick={() => {
+                        scrollToSection(item.id);
+                        setIsDropdownOpen(false);
+                      }}
+                    >
+                      {item.label}
+                    </p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
