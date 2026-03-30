@@ -19,7 +19,8 @@ interface Blog {
 
 const API = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
 
-function makeSlug(heading: string) {
+function makeSlug(heading: string | undefined | null) {
+  if (!heading) return "blog-post";
   return heading
     .trim()
     .toLowerCase()

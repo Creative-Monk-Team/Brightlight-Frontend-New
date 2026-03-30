@@ -7,7 +7,8 @@ export const metadata: Metadata = {
     "Latest immigration news and policy updates from Bright Light Immigration.",
 };
 
-function makeSlug(heading: string) {
+function makeSlug(heading: string | undefined | null) {
+  if (!heading) return "news-post";
   return heading
     .trim()
     .toLowerCase()

@@ -4,7 +4,8 @@ import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Loader from "@/components/ui/loader";
 
-function makeSlug(heading: string) {
+function makeSlug(heading: string | undefined | null) {
+  if (!heading) return "blog-post";
   return heading
     .trim()
     .toLowerCase()
@@ -12,7 +13,8 @@ function makeSlug(heading: string) {
     .replace(/\s+/g, "-");
 }
 
-function stripHtml(html: string) {
+function stripHtml(html: string | undefined | null) {
+  if (!html) return "";
   return html.replace(/<[^>]+>/g, "");
 }
 
@@ -65,7 +67,7 @@ export default function BlogsPage() {
       const q = search.toLowerCase();
       list = list.filter(
         (b) =>
-          b.blog_heading.toLowerCase().includes(q) ||
+          (b.blog_heading || "").toLowerCase().includes(q) ||
           (b.tag_1 || "").toLowerCase().includes(q) ||
           (b.tag_2 || "").toLowerCase().includes(q) ||
           (b.tag_3 || "").toLowerCase().includes(q)

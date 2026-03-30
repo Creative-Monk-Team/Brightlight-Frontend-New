@@ -15,8 +15,13 @@ interface Blog {
   alt_tag: string;
 }
 
-function makeSlug(heading: string) {
-  return heading.trim().toLowerCase().replace(/[^\w\s]/g, "").replace(/\s+/g, "-");
+function makeSlug(heading: string | undefined | null) {
+  if (!heading) return "blog-post";
+  return heading
+    .trim()
+    .toLowerCase()
+    .replace(/[^\w\s]/g, "")
+    .replace(/\s+/g, "-");
 }
 
 export default function RecentBlogs() {
@@ -25,8 +30,14 @@ export default function RecentBlogs() {
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000"}/api/blogs`)
       .then((r) => r.json())
-      .then((data: Blog[]) => setBlogs(data.slice(0, 4)))
-      .catch(() => {});
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setBlogs(data.slice(0, 4));
+        } else {
+          setBlogs([]);
+        }
+      })
+      .catch(() => setBlogs([]));
   }, []);
 
   if (blogs.length === 0) return null;
@@ -64,7 +75,7 @@ export default function RecentBlogs() {
         <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-[580px]:grid-cols-1 gap-4">
           {blogs.map((blog) => {
             const slug = blog.custom_url || makeSlug(blog.blog_heading);
-            const excerpt = blog.blog_content.replace(/<[^>]+>/g, "").slice(0, 100);
+            const excerpt = (blog.blog_content || "").replace(/<[^>]+>/g, "").slice(0, 100);
             const dateStr = blog.date
               ? new Date(blog.date).toLocaleDateString("en-CA", { year: "numeric", month: "numeric", day: "numeric" })
               : "";
