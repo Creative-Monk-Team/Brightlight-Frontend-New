@@ -49,8 +49,26 @@ function FadeIn({
 export default function OurProcess() {
   const [planePos, setPlanePos] = useState(PLANE_POSITIONS[0]);
 
+  // HowTo JSON-LD schema
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Immigrate to Canada with Bright Light Immigration",
+    description: ourProcessSection.description,
+    step: processSteps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.heading,
+      text: step.points.join(" "),
+    })),
+  };
+
   return (
     <section className="w-full py-[40px] overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <div className="max-w-[1440px] mx-auto max-[1470px]:w-[95%]">
         <FadeIn className="text-center">
           <h2 className="text-primary text-[60px] max-[790px]:text-[40px] max-[580px]:text-[30px] font-semibold">

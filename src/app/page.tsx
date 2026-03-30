@@ -203,8 +203,32 @@ export default function HomePage() {
     window.location.href = href;
   }, []);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: Array.from({ length: 15 }, (_, i) => {
+      const q = homepageFaqData[`q${i + 1}`];
+      const a = homepageFaqData[`qa${i + 1}`];
+      if (q && a) {
+        return {
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: a,
+          },
+        };
+      }
+      return null;
+    }).filter(Boolean),
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* ===================================================================
           SECTION 1 — Hero Banner (contactMap bg, gray text, card bar)
       =================================================================== */}

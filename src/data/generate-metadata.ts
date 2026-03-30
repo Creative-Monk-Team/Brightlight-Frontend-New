@@ -14,7 +14,7 @@ export function generatePageMetadata(slug: string): Metadata {
   const canonicalUrl = `${SITE_URL}/${slug}`;
 
   return {
-    title: seo.title,
+    title: { absolute: seo.title },
     description: seo.description,
     alternates: {
       canonical: canonicalUrl,

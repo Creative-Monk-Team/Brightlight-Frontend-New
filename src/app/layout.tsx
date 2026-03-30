@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     description: "Trusted RCIC-licensed immigration consultants in Surrey, BC. Simplifying Express Entry, BCPNP, visas & more.",
     images: ["/images/ogImage.png"],
   },
+  alternates: { canonical: "https://www.brightlightimmigration.ca/" },
   icons: { icon: "/favicon.ico", apple: "/favicon.ico" },
 };
 
@@ -61,6 +62,8 @@ const structuredData = {
       name: "Bright Light Immigration Inc.",
       alternateName: "Brightlight Immigration",
       url: SITE_URL,
+      logo: `${SITE_URL}/images/brightlight-logo.webp`,
+      image: `${SITE_URL}/images/ogImage.png`,
       description:
         "RCIC-licensed Canadian immigration consultants specializing in Express Entry, BCPNP, work permits, study visas, family sponsorship, and overcoming refusals.",
       telephone: "+16045033734",
@@ -114,6 +117,7 @@ const structuredData = {
         ratingValue: "4.8",
         bestRating: "5",
         ratingCount: "200",
+        url: "https://www.google.com/maps/place/Bright+Light+Immigration+Inc.",
       },
       dateModified: new Date().toISOString().split("T")[0],
     },
@@ -167,6 +171,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://img.youtube.com" />
+        <link rel="dns-prefetch" href="https://img.youtube.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

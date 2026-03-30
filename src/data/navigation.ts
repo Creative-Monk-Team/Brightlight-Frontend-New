@@ -205,7 +205,7 @@ export const SERVICES_MENU: MenuItem[] = [
           { id: "sowp", label: "SOWP - Spousal Open Work Permit", href: "/spousal-open-work-permit" },
           { id: "franco", label: "Francophone Mobility Program", href: "/francophone-mobility-program" },
           { id: "vulnerable", label: "Vulnerable Worker", href: "/open-work-vulnerable-lp" },
-          { id: "dep-child", label: "Dependent Child of Worker", href: "/openWork-dependent-children" },
+          { id: "dep-child", label: "Dependent Child of Worker", href: "/open-work-dependent-child" },
         ],
       },
       {

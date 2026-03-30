@@ -17,7 +17,7 @@ export const businessVisitorVisaData: ImmigrationPageData = {
 
   appointmentHeading: "Still not sure?",
   appointmentDescription:
-    "If you have received a refusal or have doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling previous refusals. Our approval rate for these programs is nearly 100%. We have achieved this with a tailored approach to your specific case, using case law and finding similar cases with positive results as precedents. At Brightlight Immigration, we have a dedicated team of visa application specialists who can assist you from the start of the application process all the way to obtaining your visa. Start your process now.",
+    "If you have received a refusal or have doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling previous refusals. We maintain a high approval rate for these programs. We have achieved this with a tailored approach to your specific case, using case law and finding similar cases with positive results as precedents. At Brightlight Immigration, we have a dedicated team of visa application specialists who can assist you from the start of the application process all the way to obtaining your visa. Start your process now.",
 
   whyChooseUsHeading: "Why Choose Us?",
   whyChooseUsItems: [

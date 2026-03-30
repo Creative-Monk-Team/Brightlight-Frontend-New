@@ -117,8 +117,61 @@ export default function ImmigrationPageLayout({
     });
   }
 
+  // Build FAQPage JSON-LD for rich results
+  const faqSchema =
+    data.faqs && data.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: data.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
+  // Build BreadcrumbList JSON-LD
+  const slug =
+    typeof window !== "undefined"
+      ? window.location.pathname.replace(/^\//, "").replace(/\/$/, "")
+      : "";
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.brightlightimmigration.ca/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: data.heading,
+        item: `https://www.brightlightimmigration.ca/${slug}`,
+      },
+    ],
+  };
+
   return (
     <>
+      {/* Schema: BreadcrumbList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {/* Schema: FAQPage (if FAQs exist) */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       {/* ===== BANNER ===== */}
       <div
         className="w-full bg-cover bg-no-repeat bg-center py-[100px] pt-[230px] max-[1000px]:pt-[220px] max-[580px]:pt-[200px]"

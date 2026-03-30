@@ -89,7 +89,7 @@ export const expressEntryData: ImmigrationPageData = {
 
   appointmentHeading: "In case",
   appointmentDescription:
-    "You have received a refusal for any of the reasons mentioned above or having doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling Express Entry Programs. Our approval rate for these programs are near to 100%. We achieve this with a tailored approach to your specific case. We use case law and find similar cases to your circumstances that had positive results, and we use them as precedents in cases we work on. This is why we have a high success rate. At Brightlight Immigration, we have a dedicated team of visa application specialists who can assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
+    "You have received a refusal for any of the reasons mentioned above or having doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling Express Entry Programs. We maintain a high approval rate for these programs. We achieve this with a tailored approach to your specific case. We use case law and find similar cases to your circumstances that had positive results, and we use them as precedents in cases we work on. This is why we have a high success rate. At Brightlight Immigration, we have a dedicated team of visa application specialists who can assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
 
   faqHeading: "FAQ's Made Simple",
   faqs: [

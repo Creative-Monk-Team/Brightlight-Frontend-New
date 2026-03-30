@@ -60,7 +60,7 @@ export const federalSkilledTradesProgramData: ImmigrationPageData = {
 
   appointmentHeading: "Still Not Sure?",
   appointmentDescription:
-    "If you have received a refusal for any of the reasons mentioned above or have doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling Express Entry Programs. Our approval rate for these programs is nearly 100%, achieved through a tailored approach to your specific case and using similar successful cases as precedents. At Brightlight Immigration, our dedicated team of visa application specialists will assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
+    "If you have received a refusal for any of the reasons mentioned above or have doubts regarding your case and application, do not worry. With over a decade of experience, we specialize in handling Express Entry Programs. We maintain a high approval rate for these programs, achieved through a tailored approach to your specific case and using similar successful cases as precedents. At Brightlight Immigration, our dedicated team of visa application specialists will assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
 
   faqHeading: "FAQ's Made Simple",
   faqs: [

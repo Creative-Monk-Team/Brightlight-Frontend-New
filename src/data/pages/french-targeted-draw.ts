@@ -29,7 +29,7 @@ export const frenchTargetedDrawData: ImmigrationPageData = {
 
   appointmentHeading: "Still Not Sure?",
   appointmentDescription:
-    "Contact Brightlight Immigration today to assess your profile and embark on a transformative journey towards achieving your Canadian dream. With over a decade of experience, we specialize in handling Express Entry Programs. Our approval rate for these programs is nearly 100%. We achieve this with a tailored approach to your specific case, using similar successful cases as precedents. At Brightlight Immigration, our dedicated team of visa application specialists will assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
+    "Contact Brightlight Immigration today to assess your profile and embark on a transformative journey towards achieving your Canadian dream. With over a decade of experience, we specialize in handling Express Entry Programs. We maintain a high approval rate for these programs. We achieve this with a tailored approach to your specific case, using similar successful cases as precedents. At Brightlight Immigration, our dedicated team of visa application specialists will assist you from the start of the application process all the way to obtaining your PR. Start your process now.",
 
   whyChooseUsHeading: "Why Choose Us?",
   whyChooseUsItems: [

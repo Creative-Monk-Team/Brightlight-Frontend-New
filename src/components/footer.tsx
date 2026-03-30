@@ -164,9 +164,9 @@ export default function Footer() {
           className="w-[20%] h-auto"
         />
         <div className="w-[40%] ml-1.5">
-          <h1 className="text-primary text-[30px] max-xl:text-[25px] max-sm:text-[17px] text-left">
+          <h2 className="text-primary text-[30px] max-xl:text-[25px] max-sm:text-[17px] text-left">
             Start your process today
-          </h1>
+          </h2>
           <p className="text-primary text-[15px] max-xl:text-[13px] max-sm:text-[8px] mt-2.5">
             Get your free assessment and discover your options to immigrate to
             Canada
