@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 import ImmigrationPageLayout from "@/components/templates/immigration-page-layout";
 import { outsideCanadaData } from "@/data/pages/outside-canada";
 
-export const metadata: Metadata = {
-  title: "Study in Canada: Apply for a Study Permit from Outside",
-  description:
-    "Dreaming of studying in Canada? Get your study permit from outside Canada and explore top educational institutions with a valid study permit. Apply now!",
-};
+export const metadata = generatePageMetadata("outside-canada");
 
 export default function OutsideCanadaPage() {
   return <ImmigrationPageLayout data={outsideCanadaData} />;

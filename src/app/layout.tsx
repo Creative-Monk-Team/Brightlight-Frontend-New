@@ -49,7 +49,6 @@ export const metadata: Metadata = {
     description: "Trusted RCIC-licensed immigration consultants in Surrey, BC. Simplifying Express Entry, BCPNP, visas & more.",
     images: ["/images/ogImage.png"],
   },
-  alternates: { canonical: SITE_URL },
   icons: { icon: "/favicon.ico", apple: "/favicon.ico" },
 };
 
@@ -57,22 +56,35 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": "LegalService",
       "@id": `${SITE_URL}/#business`,
-      name: "Brightlight Immigration",
-      alternateName: "Bright Light Immigration Inc.",
+      name: "Bright Light Immigration Inc.",
+      alternateName: "Brightlight Immigration",
       url: SITE_URL,
       description:
         "RCIC-licensed Canadian immigration consultants specializing in Express Entry, BCPNP, work permits, study visas, family sponsorship, and overcoming refusals.",
       telephone: "+16045033734",
       email: "info@brightlightimmigration.ca",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+16045033734",
+        contactType: "customer service",
+        email: "info@brightlightimmigration.ca",
+        availableLanguage: ["English", "Punjabi", "Hindi"],
+        areaServed: "CA",
+      },
       address: {
         "@type": "PostalAddress",
-        streetAddress: "15315 66 Ave unit 327",
+        streetAddress: "15315 66 Ave Unit 327",
         addressLocality: "Surrey",
         addressRegion: "BC",
         postalCode: "V3S 2A1",
         addressCountry: "CA",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 49.10407,
+        longitude: -122.75670,
       },
       openingHoursSpecification: [
         {
@@ -87,12 +99,15 @@ const structuredData = {
         { "@type": "Country", name: "Canada" },
         { "@type": "City", name: "Surrey" },
         { "@type": "City", name: "Vancouver" },
+        { "@type": "City", name: "Burnaby" },
+        { "@type": "City", name: "Richmond" },
       ],
       sameAs: [
         "https://ca.linkedin.com/in/loveneet-paneswar-5b2377198",
         "https://www.facebook.com/brightlightimmigration",
         "https://www.instagram.com/brightlightimmigration",
         "https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA",
+        "https://www.tiktok.com/@brightlightimmigration",
       ],
       aggregateRating: {
         "@type": "AggregateRating",
@@ -100,6 +115,7 @@ const structuredData = {
         bestRating: "5",
         ratingCount: "200",
       },
+      dateModified: new Date().toISOString().split("T")[0],
     },
     {
       "@type": "WebSite",
@@ -117,7 +133,30 @@ const structuredData = {
       "@id": `${SITE_URL}/#consultant`,
       name: "Loveneet Paneswar",
       jobTitle: "Regulated Canadian Immigration Consultant (RCIC)",
-      identifier: "R522969",
+      description: "Loveneet Paneswar is the founder and principal consultant at Bright Light Immigration Inc. With over 12 years of experience in Canadian immigration, Loveneet is a licensed RCIC (R522969) and member in good standing with the College of Immigration and Citizenship Consultants (CICC). He specializes in Express Entry, BCPNP, family sponsorship, work permits, study visas, and complex refusal cases.",
+      identifier: {
+        "@type": "PropertyValue",
+        name: "RCIC License",
+        value: "R522969",
+      },
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Professional License",
+        name: "Regulated Canadian Immigration Consultant (RCIC)",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "College of Immigration and Citizenship Consultants",
+          alternateName: "CICC",
+          url: "https://college-ic.ca",
+        },
+      },
+      memberOf: {
+        "@type": "Organization",
+        name: "College of Immigration and Citizenship Consultants",
+        alternateName: "CICC",
+        url: "https://college-ic.ca",
+        sameAs: "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx",
+      },
       worksFor: { "@id": `${SITE_URL}/#business` },
       sameAs: ["https://ca.linkedin.com/in/loveneet-paneswar-5b2377198"],
     },

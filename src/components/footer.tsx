@@ -242,7 +242,7 @@ export default function Footer() {
                     aria-label={social.label}
                     className="text-white hover:text-[#ead9b0] transition-colors duration-300"
                   >
-                    <Icon className="h-[45px] w-[45px] cursor-pointer p-[10px]" />
+                    <Icon className="h-[48px] w-[48px] cursor-pointer p-[10px]" />
                   </Link>
                 );
               })}
@@ -284,7 +284,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-center tracking-wide [word-spacing:2px] text-sm max-[500px]:text-xs mt-[80px] mb-[20px]">
-          ALL RIGHTS RESERVED BRIGHTLIGHT IMMIGRATION &copy;2024
+          ALL RIGHTS RESERVED BRIGHTLIGHT IMMIGRATION &copy;2026
         </p>
       </div>
     </footer>

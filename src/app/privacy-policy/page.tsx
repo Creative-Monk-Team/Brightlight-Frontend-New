@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Read the privacy policy of Bright Light Immigration Inc. Learn how we collect, use, and protect your personal information.",
-};
+export const metadata = generatePageMetadata("privacy-policy");
 
 const sections = [
   {

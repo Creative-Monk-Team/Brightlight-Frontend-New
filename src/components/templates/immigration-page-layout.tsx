@@ -231,9 +231,9 @@ export default function ImmigrationPageLayout({
       {/* ===== BENEFITS ===== */}
       {data.benefitsHeading && data.benefits && data.benefits.length > 0 && (
         <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto">
-          <h1 className="text-[50px] max-[580px]:text-[34px] text-[#153b58] mb-[50px]">
+          <h2 className="text-[50px] max-[580px]:text-[34px] text-[#153b58] mb-[50px]">
             {data.benefitsHeading}
-          </h1>
+          </h2>
           <ul className="ml-[40px] list-disc">
             {data.benefits.map((b, i) => (
               <li
@@ -254,9 +254,9 @@ export default function ImmigrationPageLayout({
           className="w-full bg-primary py-[100px] max-[580px]:py-[60px]"
         >
           <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto">
-            <h1 className="text-white text-[60px] max-[1000px]:text-[50px] max-[580px]:text-[34px] max-[490px]:text-[26px] text-center">
+            <h2 className="text-white text-[60px] max-[1000px]:text-[50px] max-[580px]:text-[34px] max-[490px]:text-[26px] text-center">
               {data.eligibilityHeading}
-            </h1>
+            </h2>
             {data.eligibilityDescription && (
               <p className="text-white/80 text-[20px] max-[580px]:text-[16px] text-center mt-4">
                 {data.eligibilityDescription}
@@ -291,9 +291,9 @@ export default function ImmigrationPageLayout({
       {data.drawHeading && data.drawCards && data.drawCards.length > 0 && (
         <div id="draw-history" className="bg-primary">
           <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto text-left py-[50px] text-gold">
-            <h1 className="text-[60px] max-[1000px]:text-[36px] max-[580px]:text-[26px] max-[1000px]:text-center pb-[30px]">
+            <h2 className="text-[60px] max-[1000px]:text-[36px] max-[580px]:text-[26px] max-[1000px]:text-center pb-[30px]">
               {data.drawHeading}
-            </h1>
+            </h2>
             <div className="flex max-[1000px]:flex-col mx-auto py-[50px] justify-between gap-4">
               {data.drawCards.map((card, i) => (
                 <Link
@@ -315,9 +315,9 @@ export default function ImmigrationPageLayout({
       {data.advantageHeading && (
         <div id="advantages" className="w-full pb-[20px] pt-[100px]">
           <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto max-[1000px]:text-center">
-            <h1 className="text-[50px] max-[580px]:text-[34px] text-[#153b58] mb-[50px]">
+            <h2 className="text-[50px] max-[580px]:text-[34px] text-[#153b58] mb-[50px]">
               {data.advantageHeading}
-            </h1>
+            </h2>
             {data.advantageDescription && (
               <p className="text-gray-text text-[25px] max-[580px]:text-[18px] mb-[30px] leading-[1.8]">
                 {data.advantageDescription}
@@ -355,9 +355,9 @@ export default function ImmigrationPageLayout({
       {data.refusalHeading && data.refusals && data.refusals.length > 0 && (
         <div id="refusal-reason" className="w-full bg-primary py-[100px]">
           <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto">
-            <h1 className="text-[#ecca86] text-left max-[1000px]:text-center text-[50px] max-[580px]:text-[26px]">
+            <h2 className="text-[#ecca86] text-left max-[1000px]:text-center text-[50px] max-[580px]:text-[26px]">
               {data.refusalHeading}
-            </h1>
+            </h2>
             <ul className="ml-[40px] pt-[40px] list-disc">
               {data.refusals.map((r, i) => (
                 <li
@@ -400,9 +400,9 @@ export default function ImmigrationPageLayout({
       {data.appointmentHeading && (
         <div id="appointment" className="w-full py-[50px]">
           <div className="max-w-[1440px] max-[1460px]:max-w-[95%] mx-auto text-left max-[1000px]:text-center">
-            <h1 className="text-primary text-[70px] max-[580px]:text-[40px] pb-[40px]">
+            <h2 className="text-primary text-[70px] max-[580px]:text-[40px] pb-[40px]">
               {data.appointmentHeading}
-            </h1>
+            </h2>
             {data.appointmentDescription && (
               <p className="text-black leading-[1.9] text-[27px] max-[1000px]:text-[20px]">
                 {data.appointmentDescription}

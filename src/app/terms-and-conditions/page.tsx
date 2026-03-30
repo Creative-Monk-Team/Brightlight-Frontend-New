@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 
-export const metadata: Metadata = {
-  title: "Terms and Conditions",
-  description:
-    "Read the terms and conditions for using Bright Light Immigration Inc. services and website.",
-};
+export const metadata = generatePageMetadata("terms-and-conditions");
 
 const sections = [
   {

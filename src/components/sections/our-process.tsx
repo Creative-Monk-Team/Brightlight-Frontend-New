@@ -53,9 +53,9 @@ export default function OurProcess() {
     <section className="w-full py-[40px] overflow-hidden">
       <div className="max-w-[1440px] mx-auto max-[1470px]:w-[95%]">
         <FadeIn className="text-center">
-          <h1 className="text-primary text-[60px] max-[790px]:text-[40px] max-[580px]:text-[30px] font-semibold">
+          <h2 className="text-primary text-[60px] max-[790px]:text-[40px] max-[580px]:text-[30px] font-semibold">
             {ourProcessSection.heading}
-          </h1>
+          </h2>
           <p className="text-primary text-[24px] max-[790px]:text-[18px] max-[580px]:text-[16px] tracking-[1px] font-semibold mt-5">
             {ourProcessSection.description}
           </p>

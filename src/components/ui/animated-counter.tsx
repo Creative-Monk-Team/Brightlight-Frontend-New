@@ -3,24 +3,31 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function AnimatedCounter({ target, duration = 2000 }: { target: number; duration?: number }) {
-  const [count, setCount] = useState(0);
+  // Initialize with the target value so SSR/crawlers see real numbers, not "0"
+  const [count, setCount] = useState(target);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
   useEffect(() => {
+    // Reset to 0 on client for animation
+    setCount(0);
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
-          const increment = Math.max(Math.floor(target / (duration / 16)), 1);
-          let current = 0;
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) { current = target; clearInterval(timer); }
-            setCount(current);
-          }, 16);
+          observer.disconnect();
+          const startTime = performance.now();
+          const animate = (now: number) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease-out quadratic for smooth deceleration
+            const eased = 1 - (1 - progress) * (1 - progress);
+            setCount(Math.floor(eased * target));
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+          requestAnimationFrame(animate);
         }
       },
       { threshold: 0.3 }

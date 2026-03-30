@@ -43,11 +43,12 @@ function splitHeadline(text: string) {
 // AnimatedCounter (Odometer-style)
 // =============================================================================
 function AnimatedCounter({ target, duration = 2000 }: { target: number; duration?: number }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
   useEffect(() => {
+    setCount(0);
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
@@ -222,14 +223,23 @@ export default function HomePage() {
             <h1 className="hero-slide-left text-[55px] max-[1100px]:text-[46px] max-[790px]:text-[38px] max-[580px]:text-[28px] max-[415px]:text-[24px] font-normal leading-[1.15] text-[#727376]">
               {headline1.rest}{" "}
               <span className="text-primary-light">{headline1.last}</span>
+              <br />
+              <span className="hero-slide-right inline-block mt-2">
+                {headline2.rest}{" "}
+                <span className="text-primary-light">{headline2.last}</span>
+              </span>
             </h1>
-            <h1 className="hero-slide-right text-[55px] max-[1100px]:text-[46px] max-[790px]:text-[38px] max-[580px]:text-[28px] max-[415px]:text-[24px] font-normal leading-[1.15] text-[#727376] mt-2">
-              {headline2.rest}{" "}
-              <span className="text-primary-light">{headline2.last}</span>
-            </h1>
-            <h2 className="hero-fade-up mt-5 text-[18px] max-[580px]:text-[14px] font-bold text-primary">
+            <p className="hero-fade-up mt-5 text-[18px] max-[580px]:text-[14px] font-bold text-primary">
               {homeTopSection.smallHeadline1}
-            </h2>
+            </p>
+            <div className="hero-btn mt-6">
+              <a
+                href="/booking"
+                className="inline-block font-heading bg-primary text-white rounded-[30px] px-[40px] py-[16px] max-[580px]:px-[30px] max-[580px]:py-[12px] text-[18px] max-[580px]:text-[15px] font-semibold no-underline cursor-pointer transition-all duration-300 hover:bg-primary-light hover:shadow-[0_8px_25px_rgba(19,47,70,0.4)] animate-[pulse_2s_infinite]"
+              >
+                Book Free Assessment
+              </a>
+            </div>
           </div>
 
           {/* Service icon cards — horizontal bar with dividers */}
@@ -429,9 +439,9 @@ export default function HomePage() {
         <div className="max-w-[1440px] mx-auto max-[1470px]:w-[95%] text-center">
           {/* Heading */}
           <FadeIn>
-            <h1 className="text-gold text-[60px] max-[790px]:text-[40px] max-[580px]:text-[30px] pb-[50px] max-[580px]:pb-[30px]">
+            <h2 className="text-gold text-[60px] max-[790px]:text-[40px] max-[580px]:text-[30px] pb-[50px] max-[580px]:pb-[30px]">
               {servicesSection.heading}
-            </h1>
+            </h2>
             <p className="text-white text-[26px] max-[790px]:text-[20px] max-[580px]:text-[16px] leading-[40px] max-[580px]:leading-[28px] font-light max-w-[900px] mx-auto mb-8">
               {servicesSection.description}
             </p>
@@ -460,9 +470,9 @@ export default function HomePage() {
       >
         <div className="max-w-[1440px] mx-auto max-[1470px]:w-[95%] text-center">
           <FadeIn>
-            <h1 className="text-primary text-[65px] max-[790px]:text-[40px] max-[580px]:text-[30px]">
+            <h2 className="text-primary text-[65px] max-[790px]:text-[40px] max-[580px]:text-[30px]">
               {achievementsSection.heading}
-            </h1>
+            </h2>
             <h2 className="text-primary text-[32px] max-[790px]:text-[22px] max-[580px]:text-[16px] font-normal pt-[30px] pb-[40px]">
               {achievementsSection.description}
             </h2>

@@ -3,9 +3,9 @@ export const seoRegistry: Record<
   { title: string; description: string }
 > = {
   "about-us": {
-    title: "Top Immigration Agencies in Canada | Bright Light Immigration",
+    title: "About Us – Bright Light Immigration Surrey, BC",
     description:
-      "Discover why Bright Light Immigration stands among the top immigration agencies in Canada. Trusted experts helping you achieve your Canadian immigration goals.",
+      "Learn about Bright Light Immigration, an RCIC-licensed consulting firm in Surrey, BC with 12+ years of experience helping clients achieve their Canadian immigration goals.",
   },
   "additional-document": {
     title: "Trusted Immigration Consultant for Canada - Bright Light",
@@ -33,9 +33,9 @@ export const seoRegistry: Record<
       "Need help with the Agriculture Stream LMIA? Connect with the best immigration consultant in Canada for reliable, step-by-step guidance on your work permit.",
   },
   "bc-pnp": {
-    title: "Best Immigration Consultant Canada – Bright Light Help",
+    title: "BC PNP Consultant – Surrey & Vancouver | Brightlight",
     description:
-      "Need trusted guidance for Canada PR or BC PNP? Bright Light Immigration is the best immigration consultant in Canada, offering expert, personalized support.",
+      "Need trusted guidance for BC PNP? Bright Light Immigration is your RCIC-licensed consultant in Surrey, BC offering expert, personalized BCPNP support.",
   },
   "bcpnp-calculator": {
     title: "Trusted Immigration Consultant for Canada – Bright Light",
@@ -43,9 +43,9 @@ export const seoRegistry: Record<
       "Need guidance for Canadian immigration? Bright Light offers expert advice and a free BC PNP points calculator to help you plan your move to Canada with confidence.",
   },
   "blogs": {
-    title: "Top Immigration Agencies in Canada | Bright Light Blog",
+    title: "Immigration Blog – Tips & Updates | Brightlight",
     description:
-      "Explore expert tips and insights from top immigration agencies in Canada. Stay informed with Bright Light Immigration's latest blogs and guidance for newcomers.",
+      "Read expert immigration tips and Canadian policy updates from Brightlight Immigration. Trusted insights for students, workers, and families planning their move.",
   },
   "bridging-open-work-permit-lp": {
     title: "Apply for Work Permit in Canada | Bright Light Immigration",
@@ -110,9 +110,9 @@ export const seoRegistry: Record<
       "Looking for the top immigration consultant in Canada? Bright Light Immigration helps common-law partners with fast, reliable temporary visa solutions. Contact us today!",
   },
   "contact-us": {
-    title: "Trusted Immigration Consultant for Canada | Bright Light",
+    title: "Contact Us – Bright Light Immigration Surrey",
     description:
-      "Get expert guidance from Bright Light, your reliable immigration consultant for Canada. Contact us today for personalized visa support and smooth application process.",
+      "Reach Bright Light Immigration for expert Canadian visa guidance. Call (604) 503-3734 or visit us at 15315 66 Ave Unit 327, Surrey, BC. Book a free assessment.",
   },
   "dependent-children": {
     title: "Best Immigration Consultant Canada | Bright Light Help",
@@ -136,9 +136,9 @@ export const seoRegistry: Record<
       "Looking for the best immigration consultant for Canada? Bright Light Immigration is among the top immigration agencies in Canada for entry-level & semi-skilled programs.",
   },
   "express-entry": {
-    title: "Top Immigration Agencies in Canada | Bright Light Experts",
+    title: "Express Entry Canada – RCIC Help | Brightlight",
     description:
-      "Looking for trusted immigration agencies in Canada? Bright Light Immigration offers expert Express Entry services for your smooth and successful relocation process.",
+      "Get expert Express Entry guidance from RCIC-licensed Brightlight Immigration in Surrey, BC. We help with CRS optimization, ITA, and PR applications.",
   },
   "extensions-draft": {
     title: "Extend Your Stay in Canada | Brightlight Immigration",
@@ -447,9 +447,9 @@ export const seoRegistry: Record<
       "Explore Canada's Express Entry draws targeting STEM professionals. If you work in science, tech, engineering, or math, this is your chance for fast-track immigration.",
   },
   "student-visa": {
-    title: "Your Guide on How to Get a Student Visa for Canada",
+    title: "Study Visa Canada – Expert Guidance | Brightlight",
     description:
-      "Discover how to obtain a student visa for Canada, covering the application process, necessary documentation, and advice for an easy experience.",
+      "Get your student visa for Canada with Brightlight Immigration. Expert RCIC guidance on study permits, SDS, documentation, and application support.",
   },
   "study-permit-minors": {
     title: "Canadian Study Permit - Apply for Your Minor Child's",
@@ -499,8 +499,8 @@ export const seoRegistry: Record<
       "Planning a trip to Canada? Bright Light Immigration helps you understand the visitor visa of Canada, types, eligibility & processing time for a smooth journey.",
   },
   "work-permit": {
-    title: "Work Permit in Canada | Fast Processing Time & Guidance",
+    title: "Work Permit Canada – Fast Guidance | Brightlight",
     description:
-      "Explore opportunities with a work permit in Canada, learn about work permit processing time, extend permits, or hire skilled foreign workers legally.",
+      "Explore work permit options in Canada with Brightlight Immigration in Surrey, BC. Expert RCIC guidance on processing, extensions, and employer compliance.",
   },
 };

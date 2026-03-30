@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Immigration Tools | Bright Light Immigration",
-  description:
-    "Use our free immigration tools including CRS calculators, CLB calculators, and more to assess your eligibility for Canadian immigration programs.",
-};
+export const metadata = generatePageMetadata("immigration-tools");
 
 const tools = [
   {

@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Immigration Services in Canada | Bright Light Immigration",
-  description:
-    "Explore our comprehensive immigration services including PR, work permits, study visas, family sponsorship, and more. Bright Light Immigration is here to help.",
-};
+export const metadata = generatePageMetadata("more-services");
 
 const services = [
   {

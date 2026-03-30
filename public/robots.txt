@@ -1,10 +1,28 @@
+# Managed by Next.js App Router — see src/app/robots.ts
+# This static file is a fallback; Next.js generates /robots.txt dynamically.
+
 User-agent: *
 Allow: /
-
-Disallow: /tmp/
-Disallow: /new-delivery-system
-Disallow: /tag/
-Disallow: /blogs/6735a539d9d73d5673d03dca
+Disallow: /api/
 Disallow: /admin/
+Disallow: /tmp/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
 
 Sitemap: https://www.brightlightimmigration.ca/sitemap.xml

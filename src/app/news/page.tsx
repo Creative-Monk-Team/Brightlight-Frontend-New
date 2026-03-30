@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Immigration News | Brightlight Immigration",
-  description:
-    "Latest immigration news and policy updates from Bright Light Immigration.",
-};
+export const metadata = generatePageMetadata("news");
 
 function makeSlug(heading: string | undefined | null) {
   if (!heading) return "news-post";

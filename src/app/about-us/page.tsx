@@ -3,6 +3,9 @@ import Link from "next/link";
 import { aboutUsData } from "@/data/pages/about-us";
 import BestChoice from "@/components/sections/best-choice";
 import AnimatedCounter from "@/components/ui/animated-counter";
+import { generatePageMetadata } from "@/data/generate-metadata";
+
+export const metadata = generatePageMetadata("about-us");
 
 export default function AboutUsPage() {
   const data = aboutUsData;

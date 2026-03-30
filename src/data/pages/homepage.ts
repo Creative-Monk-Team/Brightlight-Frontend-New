@@ -206,7 +206,7 @@ export const ourProcessSection = {
 
 export const processSteps: ProcessStep[] = [
   {
-    heading: "PERSONALISED ASSESMENT",
+    heading: "PERSONALISED ASSESSMENT",
     points: [
       "Firstly, we will identify and understand your Canadian immigration needs and goals.",
       "Then, we will assess your eligibility for various immigration programs accordingly.",

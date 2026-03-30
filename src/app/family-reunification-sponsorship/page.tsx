@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/data/generate-metadata";
 import ImmigrationPageLayout from "@/components/templates/immigration-page-layout";
 import { familyReunificationSponsorshipData } from "@/data/pages/family-reunification-sponsorship";
 
-export const metadata: Metadata = {
-  title: "Canada Family Reunion Visa | Spouse, Child & Parents",
-  description:
-    "Reunite with your loved ones in Canada through the family reunion visa Canada. Sponsor your spouse, children, parents, or grandparents with ease.",
-};
+export const metadata = generatePageMetadata("family-reunification-sponsorship");
 
 export default function FamilyReunificationSponsorshipPage() {
   return (
