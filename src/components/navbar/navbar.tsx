@@ -696,7 +696,7 @@ export default function Navbar({ showBlue = false }: NavbarProps) {
                   className="font-bold max-[450px]:text-[10px]"
                   style={{ color: showBlue ? "#164c95" : "white" }}
                 >
-                  info@brightlightimmigration.ca
+                  info<span>@</span>brightlightimmigration.ca
                 </span>
               </div>
             </div>

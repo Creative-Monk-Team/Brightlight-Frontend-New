@@ -282,7 +282,7 @@ export default function ContactUsPage() {
                 GET IN TOUCH
               </h5>
               <p className="text-[15px]">(604) 503-3734</p>
-              <p className="text-[15px]">info@brightlightimmigration.ca</p>
+              <p className="text-[15px]">info<span>@</span>brightlightimmigration.ca</p>
             </div>
           </div>
         </div>

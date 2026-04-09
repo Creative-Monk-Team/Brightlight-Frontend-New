@@ -34,7 +34,7 @@ export const SERVICES_MENU: MenuItem[] = [
               { id: "cat-trade", label: "Trade Occupations", href: "/trade-occupation-targeted-draw" },
               { id: "cat-transport", label: "Transport Occupation Targeted Draws", href: "/transport-occupation-targeted-draw" },
               { id: "cat-agri", label: "Agriculture and Agri-Food Occupation", href: "/agriculture-agri-food-occupation" },
-              { id: "cat-education", label: "Education Occupations", href: "/education-category" },
+              { id: "cat-education", label: "Education Occupations", href: "/education-based-draws" },
             ],
           },
         ],
@@ -86,7 +86,7 @@ export const SERVICES_MENU: MenuItem[] = [
   {
     id: "temporary",
     label: "Temporary Residency",
-    href: "/temporary-resident",
+    href: "/temporary-residency",
     nestedContainer: "permanent",
     children: [
       { id: "super-visa", label: "Super Visa", href: "/super-visa" },
@@ -101,8 +101,8 @@ export const SERVICES_MENU: MenuItem[] = [
           { id: "reconsideration", label: "Reconsideration for Refusal", href: "/reconsideration" },
         ],
       },
-      { id: "trp", label: "Temporary Resident Permits", href: "/temporary-resident-permit-draft" },
-      { id: "restoration", label: "Restoration", href: "/restoration-status-draft" },
+      { id: "trp", label: "Temporary Resident Permits", href: "/temporary-resident-permit" },
+      { id: "restoration", label: "Restoration", href: "/restoration-of-status" },
       { id: "extend-stay", label: "Extend Stay", href: "/extensions-draft" },
       { id: "flagpoling", label: "Flagpoling", href: "/flagpoling" },
       {
@@ -159,7 +159,7 @@ export const SERVICES_MENU: MenuItem[] = [
       {
         id: "spousal-sponsorship",
         label: "Spousal Sponsorship",
-        href: "/spouse-common-law-sponsership",
+        href: "/spouse-common-law-sponsorship",
         nestedContainer: "permanent",
         children: [
           { id: "spouse-inland", label: "Inside Canada", href: "/spouse-inland" },
@@ -167,7 +167,7 @@ export const SERVICES_MENU: MenuItem[] = [
           { id: "same-sex", label: "Same Sex", href: "/same-sex" },
         ],
       },
-      { id: "parents", label: "Parents / Grandparents", href: "/parents-grandparents" },
+      { id: "parents", label: "Parents / Grandparents", href: "/parents-grandparents-sponsorship" },
       { id: "dependent-children", label: "Dependent Children", href: "/dependent-children" },
       { id: "hc", label: "H & C", href: "/humanitarian-compassionate" },
       { id: "orphan", label: "Orphan", href: "/orphan" },
@@ -200,7 +200,7 @@ export const SERVICES_MENU: MenuItem[] = [
         href: "/open-work-permit",
         nestedContainer: "double",
         children: [
-          { id: "bowp", label: "BOWP - Bridging Open Work Permit", href: "/bridging-open-work-permit-lp" },
+          { id: "bowp", label: "BOWP - Bridging Open Work Permit", href: "/bridging-open-work-permit" },
           { id: "pgwp", label: "PGWP - Post Graduate Open Work Permit", href: "/pgwp" },
           { id: "sowp", label: "SOWP - Spousal Open Work Permit", href: "/spousal-open-work-permit" },
           { id: "franco", label: "Francophone Mobility Program", href: "/francophone-mobility-program" },
@@ -211,7 +211,7 @@ export const SERVICES_MENU: MenuItem[] = [
       {
         id: "spousal-permit",
         label: "Spousal Permit",
-        href: "/spouse-common-law-sponsership",
+        href: "/spouse-common-law-sponsorship",
         nestedContainer: "double",
         children: [
           { id: "spousal-worker", label: "Open Work Permit - For Spouse of Worker", href: "/spousal-open-work-permit" },
@@ -234,7 +234,7 @@ export const SERVICES_MENU: MenuItem[] = [
     nestedContainer: "permanent",
     children: [
       { id: "care-in-lmia", label: "Inside - With LMIA", href: "/in-home-caregiver-program-lp" },
-      { id: "care-pr", label: "PR Pathways for Care-Giver", href: "/permanent-residence-pathways-caregivers-lp" },
+      { id: "care-pr", label: "PR Pathways for Care-Giver", href: "/permanent-residency-pathways-caregivers" },
     ],
   },
 
@@ -266,7 +266,7 @@ export const SERVICES_MENU: MenuItem[] = [
     children: [
       { id: "reconsideration2", label: "Reconsideration of Refusal Decision", href: "/reconsideration" },
       { id: "additional-doc", label: "Additional Document Request", href: "/additional-document" },
-      { id: "pfl", label: "PFL", href: "/reply-to-pfl-page" },
+      { id: "pfl", label: "PFL", href: "/reply-to-pfl" },
     ],
   },
 ];

@@ -119,7 +119,7 @@ function ContactInfo() {
             href="mailto:info@brightlightimmigration.ca"
             className="text-white"
           >
-            info@brightlightimmigration.ca
+            info<span>@</span>brightlightimmigration.ca
           </Link>
         </p>
       </div>
