@@ -47,6 +47,8 @@ export default function BlogsPage() {
       .then((data) => {
         if (Array.isArray(data)) {
           setBlogs(data);
+        } else if (data && Array.isArray(data.blogs)) {
+          setBlogs(data.blogs);
         } else {
           console.error("Blogs data is not an array:", data);
           setBlogs([]);

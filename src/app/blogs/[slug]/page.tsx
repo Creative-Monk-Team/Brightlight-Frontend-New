@@ -44,7 +44,9 @@ async function getAllBlogs(): Promise<Blog[]> {
     const res = await fetch(`${API}/api/blogs`, { cache: "no-store" });
     if (!res.ok) return [];
     const data = await res.json();
-    return Array.isArray(data) ? data : [];
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.blogs)) return data.blogs;
+    return [];
   } catch {
     return [];
   }

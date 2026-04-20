@@ -32,7 +32,10 @@ async function getNews(): Promise<NewsItem[]> {
       { cache: "no-store" }
     );
     if (!res.ok) return [];
-    return res.json();
+    const data = await res.json();
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.news)) return data.news;
+    return [];
   } catch {
     return [];
   }
